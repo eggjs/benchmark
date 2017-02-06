@@ -35,12 +35,14 @@ egg benchmark
 egg version | QPS
 --- | ---
 0.10.0 | 8470
+0.2.0 | 8917
 
 ### nunjucks
 
 egg version | QPS
 --- | ---
 0.10.0 | 5681
+0.2.0 | 6732
 
 ## Last Results
 
