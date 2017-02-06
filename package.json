@@ -1,0 +1,38 @@
+{
+  "name": "egg-benchmark",
+  "version": "1.0.0",
+  "description": "egg benchmark",
+  "private": true,
+  "dependencies": {
+    "egg": "^0.10.0",
+    "egg-alinode": "^1.1.0",
+    "egg-view-nunjucks": "^1.0.0",
+    "koa": "^1.2.4",
+    "koa-router": "^5.4.0",
+    "nunjucks": "^3.0.0",
+    "toa": "^2.5.1",
+    "toa-router": "^2.0.1"
+  },
+  "devDependencies": {
+    "autod": "^2.7.1",
+    "eslint": "^3.15.0",
+    "eslint-config-egg": "^3.2.0",
+    "webstorm-disable-index": "^1.1.2"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "test-simple": "simple/run.sh",
+    "test-simple-view": "simple_view/run.sh",
+    "test": "npm run test-simple && npm run test-simple-view",
+    "ci": "./install-wrk.sh && npm test",
+    "autod": "autod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eggjs/benchmark.git"
+  },
+  "author": "fengmk2 <fengmk2@gmail.com> (https://fengmk2.com)",
+  "license": "MIT"
+}
