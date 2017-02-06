@@ -4,7 +4,7 @@ const koa = require('koa');
 const router = require('koa-router')();
 
 const app = koa();
-let n = 10;
+let n = 15;
 
 while (n--) {
   app.use(function* (next) {

@@ -1,5 +1,10 @@
 # benchmark
 
+[![build status][travis-image]][travis-url]
+
+[travis-image]: https://img.shields.io/travis/eggjs/benchmark.svg?style=flat-square
+[travis-url]: https://travis-ci.org/eggjs/benchmark
+
 egg benchmark
 
 ## Results
@@ -20,7 +25,7 @@ toa nunjucks | 7869 | 6.32 | 3.16 | 59.54
 
 ## Default Middleware
 
-- 10 middlewares
+- 15 middlewares (egg has 6 security middlewares enable by default)
 - enable router
 
 ## Scenes

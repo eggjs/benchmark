@@ -5,7 +5,7 @@ const Router = require('toa-router');
 
 const router = new Router();
 const app = toa();
-let n = 10;
+let n = 15;
 
 while (n--) {
   // app.use(function* (next) {
