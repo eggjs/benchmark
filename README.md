@@ -7,22 +7,6 @@
 
 egg benchmark
 
-## Results
-
-- node: 6.9.5
-- koa: 1.2.4
-- toa: 2.5.1
-- egg: 0.10.0
-
-Scene | QPS | Avg RT (ms) | Stdev RT | Max RT
----   | --- | ---         | ---      | ---
-egg Hello World | 8917 | 4.68 | 3.56 | 108.21
-koa Hello World | 10709 | 5.02 | 2.74 | 45.41
-toa Hello World | 10041 | 5.38 | 2.20 | 47.18
-egg nunjucks | 6732 | 7.25 | 4.81 | 257.58
-koa nunjucks | 8596 | 6.03 | 6.35 | 162.53
-toa nunjucks | 7869 | 6.32 | 3.16 | 59.54
-
 ## Default Middleware
 
 - 15 middlewares (egg has 6 security middlewares enable by default)
@@ -44,92 +28,108 @@ toa nunjucks | 7869 | 6.32 | 3.16 | 59.54
 - CPU x4: Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
 - Mem: 10G
 
-## Details
+## egg versions benchmark
 
 ### Hello World
 
-- koa
-
-```bash
-wrk http://10.209.84.139:7002/ -d 10 -c 50 -t 8
-Running 10s test @ http://10.209.84.139:7002/
-  8 threads and 50 connections
-  Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     4.68ms    3.56ms 108.21ms   97.60%
-    Req/Sec     1.35k   270.38     2.86k    79.85%
-  108162 requests in 10.10s, 16.19MB read
-Requests/sec:  10709.54
-Transfer/sec:      1.60MB
-```
-
-- toa
-
-```bash
-wrk http://10.209.84.139:7003/ -d 10 -c 50 -t 8
-Running 10s test @ http://10.209.84.139:7003/
-  8 threads and 50 connections
-  Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     5.02ms    2.74ms  45.41ms   92.83%
-    Req/Sec     1.27k   140.46     2.59k    82.32%
-  101410 requests in 10.10s, 17.02MB read
-Requests/sec:  10041.10
-Transfer/sec:      1.69MB
-```
-
-- egg
-
-```bash
-wrk http://10.209.84.139:7001/ -d 10 -c 50 -t 8
-Running 10s test @ http://10.209.84.139:7001/
-  8 threads and 50 connections
-  Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     5.38ms    2.20ms  47.18ms   76.67%
-    Req/Sec     1.13k   219.26     2.56k    69.24%
-  90065 requests in 10.10s, 25.34MB read
-Requests/sec:   8917.43
-Transfer/sec:      2.51MB
-```
+egg version | QPS
+--- | ---
+0.10.0 | 8470
 
 ### nunjucks
 
-- koa
+egg version | QPS
+--- | ---
+0.10.0 | 5681
+
+## Last Results
+
+- node: 6.9.5
+- koa: 1.2.4
+- toa: 2.5.1
+- egg: 0.10.0
+
+Scene | QPS | Avg RT (ms) | Stdev RT | Max RT
+---   | --- | ---         | ---      | ---
+egg Hello World | 8470 | 5.86 | 3.60 | 121.69
+koa Hello World | 14159 | 3.37 | 0.52 | 32.17
+toa Hello World | 16676 | 3.21 | 2.25 | 37.70
+egg nunjucks | 5681 | 8.84 | 6.24 | 175.02
+koa nunjucks | 9056 | 5.39 | 2.20 | 73.22
+toa nunjucks | 9830 | 5.26 | 3.48 | 80.05
+
+### Last Details
+
+#### Hello World
 
 ```bash
-wrk http://10.209.84.139:7002/ -d 10 -c 50 -t 8
-Running 10s test @ http://10.209.84.139:7002/
+------- egg hello -------
+
+Running 10s test @ http://127.0.0.1:7001/
   8 threads and 50 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     6.03ms    6.35ms 162.53ms   97.93%
-    Req/Sec     1.09k   220.49     2.71k    82.02%
-  86825 requests in 10.10s, 217.03MB read
-Requests/sec:   8596.56
-Transfer/sec:     21.49MB
+    Latency     5.86ms    3.60ms 121.69ms   98.75%
+    Req/Sec     1.07k   108.88     1.30k    94.62%
+  84834 requests in 10.02s, 28.48MB read
+Requests/sec:   8470.22
+Transfer/sec:      2.84MB
+
+------- koa hello -------
+
+Running 10s test @ http://127.0.0.1:7002/
+  8 threads and 50 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     3.37ms  525.80us  32.17ms   94.67%
+    Req/Sec     1.79k   406.50    13.19k    99.38%
+  142991 requests in 10.10s, 21.55MB read
+Requests/sec:  14159.54
+Transfer/sec:      2.13MB
+
+------- toa hello -------
+
+Running 10s test @ http://127.0.0.1:7003/
+  8 threads and 50 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     3.21ms    2.25ms  37.70ms   93.39%
+    Req/Sec     2.10k   166.11     2.40k    75.00%
+  166900 requests in 10.01s, 28.17MB read
+Requests/sec:  16676.17
+Transfer/sec:      2.81MB
 ```
 
-- toa
+#### nunjucks
 
 ```bash
-wrk http://10.209.84.139:7003/ -d 10 -c 50 -t 8
-Running 10s test @ http://10.209.84.139:7003/
+------- egg view -------
+
+Running 10s test @ http://127.0.0.1:7001/
   8 threads and 50 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     6.32ms    3.16ms  59.54ms   93.03%
-    Req/Sec     0.99k   116.72     2.05k    80.72%
-  79487 requests in 10.10s, 200.12MB read
-Requests/sec:   7869.66
-Transfer/sec:     19.81MB
-```
+    Latency     8.84ms    6.24ms 175.02ms   93.41%
+    Req/Sec   715.54     86.60     0.87k    81.58%
+  56910 requests in 10.02s, 152.78MB read
+Requests/sec:   5681.20
+Transfer/sec:     15.25MB
 
-- egg
+------- koa view -------
 
-```bash
-wrk http://10.209.84.139:7001/ -d 10 -c 50 -t 8
-Running 10s test @ http://10.209.84.139:7001/
+Running 10s test @ http://127.0.0.1:7002/
   8 threads and 50 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     7.25ms    4.81ms 257.58ms   92.97%
-    Req/Sec     0.85k   230.42     2.39k    62.89%
-  67997 requests in 10.10s, 178.91MB read
-Requests/sec:   6732.86
-Transfer/sec:     17.72MB
+    Latency     5.39ms    2.20ms  73.22ms   92.56%
+    Req/Sec     1.14k    97.00     1.29k    74.75%
+  90668 requests in 10.01s, 226.63MB read
+Requests/sec:   9056.44
+Transfer/sec:     22.64MB
+
+------- toa view -------
+
+Running 10s test @ http://127.0.0.1:7003/
+  8 threads and 50 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     5.26ms    3.48ms  80.05ms   92.65%
+    Req/Sec     1.24k   173.33     1.70k    70.25%
+  98441 requests in 10.01s, 247.84MB read
+Requests/sec:   9830.29
+Transfer/sec:     24.75MB
 ```
