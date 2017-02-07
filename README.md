@@ -28,6 +28,12 @@ egg benchmark
 - CPU x4: Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
 - Mem: 10G
 
+## Known issues
+
+- [ensure csrf token exists](https://github.com/eggjs/egg-security/blob/master/app/extend/context.js#L75): It's cause get and set cookie on every request.
+  ![image](https://cloud.githubusercontent.com/assets/156269/22675417/8fd55b44-ed20-11e6-8ac8-77a791e558dd.png)
+
+
 ## egg versions benchmark
 
 ### Hello World
