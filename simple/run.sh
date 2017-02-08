@@ -3,7 +3,7 @@
 export PATH=`dirname $0`/../wrk:$PATH
 
 echo
-EGG_SERVER_ENV=prod node `dirname $0`/dispatch.js $1 &
+EGG_SERVER_ENV=prod node $NODE_FLAGS `dirname $0`/dispatch.js $1 &
 pid=$!
 
 sleep 5

@@ -2,7 +2,7 @@
 
 const path = require('path');
 
-Object.assgin(exports, require('../../config'));
+Object.assign(exports, require('../../config'));
 
 exports.keys = 'foo';
 
