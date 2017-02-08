@@ -1,5 +1,9 @@
 'use strict';
 
-module.exports = function* () {
-  this.body = 'Hello World, egg\n';
+module.exports = app => {
+  return class Home extends app.Controller {
+    * index() {
+      this.ctx.body = 'Hello World, egg\n';
+    }
+  };
 };

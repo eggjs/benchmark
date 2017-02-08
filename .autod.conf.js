@@ -12,11 +12,9 @@ module.exports = {
     'egg-view-nunjucks',
   ],
   devdep: [
-    'egg-bin',
     'autod',
     'eslint',
     'eslint-config-egg',
-    'supertest',
     'webstorm-disable-index',
     'nunjucks',
     'koa',
