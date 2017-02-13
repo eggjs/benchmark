@@ -7,9 +7,9 @@ EGG_SERVER_ENV=prod node $NODE_FLAGS `dirname $0`/dispatch.js $1 &
 pid=$!
 
 sleep 5
-curl 'http://127.0.0.1:7001/' -s | grep 'title'
 curl 'http://127.0.0.1:7002/' -s | grep 'title'
 curl 'http://127.0.0.1:7003/' -s | grep 'title'
+curl 'http://127.0.0.1:7001/' -s | grep 'title'
 
 echo ""
 echo "------- koa view -------"
