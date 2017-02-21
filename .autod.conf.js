@@ -10,6 +10,7 @@ module.exports = {
   dep: [
     'egg-alinode',
     'egg-view-nunjucks',
+    'egg-passport',
   ],
   devdep: [
     'autod',

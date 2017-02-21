@@ -6,16 +6,17 @@
   "dependencies": {
     "egg": "^0.12.0",
     "egg-alinode": "^1.1.0",
+    "egg-passport": "^1.0.0",
     "egg-view-nunjucks": "^1.0.0",
-    "koa": "^1.2.4",
+    "koa": "^1.2.5",
     "koa-router": "^5.4.0",
     "nunjucks": "^3.0.0",
-    "toa": "^2.5.1",
+    "toa": "^2.6.0",
     "toa-router": "^2.0.1"
   },
   "devDependencies": {
     "autod": "^2.7.1",
-    "eslint": "^3.15.0",
+    "eslint": "^3.16.0",
     "eslint-config-egg": "^3.2.0",
     "webstorm-disable-index": "^1.1.2"
   },
@@ -25,7 +26,8 @@
   "scripts": {
     "test-simple": "simple/run.sh",
     "test-simple-view": "simple_view/run.sh",
-    "test": "npm run test-simple && npm run test-simple-view",
+    "test-simple-passport": "simple_passport/run.sh",
+    "test": "npm run test-simple && npm run test-simple-view && npm run test-simple-passport",
     "ci": "./install-wrk.sh && npm test",
     "autod": "autod"
   },
