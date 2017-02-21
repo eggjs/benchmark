@@ -37,7 +37,7 @@ function render(name, locals) {
 }
 
 router.get('/', function* () {
-  this.body = yield render('home.html', {
+  this.body = yield render('nunjucks/home.html', {
     user: {
       name: 'footoa',
     },

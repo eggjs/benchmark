@@ -10,7 +10,9 @@ sleep 5
 curl 'http://127.0.0.1:7002/' -s | grep 'title'
 curl 'http://127.0.0.1:7003/' -s | grep 'title'
 curl 'http://127.0.0.1:7001/' -s | grep 'title'
-curl 'http://127.0.0.1:7001/aa' -s | grep 'title'
+curl 'http://127.0.0.1:7004/nunjucks' -s | grep 'title'
+curl 'http://127.0.0.1:7004/ejs' -s | grep 'title'
+curl 'http://127.0.0.1:7004/aa' -s | grep 'title'
 
 echo ""
 echo "------- koa view -------"
@@ -31,18 +33,27 @@ wrk 'http://127.0.0.1:7003/' \
 
 sleep 3
 echo ""
-echo "------- egg view -------"
+echo "------- egg nunjucks view -------"
 echo ""
-wrk 'http://127.0.0.1:7001/' \
+wrk 'http://127.0.0.1:7004/nunjucks' \
   -d 10 \
   -c 50 \
   -t 8
 
 sleep 3
 echo ""
-echo "------- egg view (Async Await) -------"
+echo "------- egg ejs view -------"
 echo ""
-wrk 'http://127.0.0.1:7001/aa' \
+wrk 'http://127.0.0.1:7004/ejs' \
+  -d 10 \
+  -c 50 \
+  -t 8
+
+sleep 3
+echo ""
+echo "------- egg nunjucks view (Async Await) -------"
+echo ""
+wrk 'http://127.0.0.1:7004/aa' \
   -d 10 \
   -c 50 \
   -t 8
