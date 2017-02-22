@@ -10,6 +10,7 @@ sleep 5
 curl 'http://127.0.0.1:7002/'
 curl 'http://127.0.0.1:7003/'
 curl 'http://127.0.0.1:7001/'
+curl 'http://127.0.0.1:7001/aa'
 
 echo ""
 echo "------- koa hello -------"
@@ -33,6 +34,15 @@ echo ""
 echo "------- egg hello -------"
 echo ""
 wrk 'http://127.0.0.1:7001/' \
+  -d 10 \
+  -c 50 \
+  -t 8
+
+sleep 3
+echo ""
+echo "------- egg hello (Async Await) -------"
+echo ""
+wrk 'http://127.0.0.1:7001/aa' \
   -d 10 \
   -c 50 \
   -t 8

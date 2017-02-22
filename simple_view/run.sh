@@ -10,6 +10,7 @@ sleep 5
 curl 'http://127.0.0.1:7002/' -s | grep 'title'
 curl 'http://127.0.0.1:7003/' -s | grep 'title'
 curl 'http://127.0.0.1:7001/' -s | grep 'title'
+curl 'http://127.0.0.1:7001/aa' -s | grep 'title'
 
 echo ""
 echo "------- koa view -------"
@@ -36,4 +37,14 @@ wrk 'http://127.0.0.1:7001/' \
   -d 10 \
   -c 50 \
   -t 8
+
+sleep 3
+echo ""
+echo "------- egg view (Async Await) -------"
+echo ""
+wrk 'http://127.0.0.1:7001/aa' \
+  -d 10 \
+  -c 50 \
+  -t 8
+
 kill $pid
