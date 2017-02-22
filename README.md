@@ -62,7 +62,7 @@ egg version | node version | QPS Generator | Async Await
 - egg-passport: 1.0.0
 
 egg version | node version | QPS Generator | Async Await
---- | --- | ---
+--- | --- | --- | ---
 0.12.0 | 7.6.0 | 9981 | 10436
 0.12.0 | 6.9.5 | 7943 | -
 
