@@ -40,7 +40,7 @@ wrk 'http://127.0.0.1:7001/' \
 
 sleep 3
 echo ""
-echo "------- egg async-await view -------"
+echo "------- egg view (Async Await) -------"
 echo ""
 wrk 'http://127.0.0.1:7001/aa' \
   -d 10 \

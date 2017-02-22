@@ -21,8 +21,8 @@ egg benchmark
 
 ## Scripts
 
-- koa: `wrk http://remote-ip:7002/ -d 10 -c 50 -t 8`
-- toa: `wrk http://remote-ip:7003/ -d 10 -c 50 -t 8`
+- koa: `wrk http://127.0.0.1:7002/ -d 10 -c 50 -t 8`
+- toa: `wrk http://127.0.0.1:7003/ -d 10 -c 50 -t 8`
 - egg: `wrk http://127.0.0.1:7001/ -d 10 -c 50 -t 8`
 
 ## Server
@@ -40,29 +40,29 @@ egg benchmark
 
 ### Hello World
 
-egg version | QPS
---- | ---
-0.12.0 | 8880
-0.11.0 | 8889
-0.10.0 | 8470
-0.2.0 | 8917
+egg version | QPS Generator | Async Await
+--- | --- | ---
+0.12.0 | 8880 | -
+0.11.0 | 8889 | -
+0.10.0 | 8470 | -
+0.2.0 | 8917 | -
 
 ### nunjucks
 
-egg version | QPS
---- | ---
-0.12.0 | 5967
-0.11.0 | 6057
-0.10.0 | 5681
-0.2.0 | 6732
+egg version | QPS Generator | Async Await
+--- | --- | ---
+0.12.0 | 5967 | -
+0.11.0 | 6057 | -
+0.10.0 | 5681 | -
+0.2.0 | 6732 | -
 
 ### passport
 
 - egg-passport: 0.0.4
 
-egg version | QPS
---- | ---
-0.12.0 | 7943
+egg version | QPS Generator | Async Await
+--- | --- | ---
+0.12.0 | 7943 | ---
 
 ## Last Results
 
@@ -76,10 +76,13 @@ Scene | QPS | Avg RT (ms) | Stdev RT | Max RT
 koa Hello World | 14423 | 3.40 | 2.06 | 82.80
 toa Hello World | 17002 | 3.16 | 2.24 | 33.68
 egg Hello World | 8880 | 5.44 | 1.37 | 62.04
+egg Hello World (Async Await) | 8880 | 5.44 | 1.37 | 62.04
 egg Hello Passport | 7943 | 6.21 | 3.29 | 111.13
+egg Hello Passport (Async Await) | 7943 | 6.21 | 3.29 | 111.13
 koa nunjucks | 9620 | 5.19 | 3.72 | 121.49
 toa nunjucks | 10255 | 5.08 | 3.15 | 60.89
 egg nunjucks | 5967 | 8.31 | 4.68 | 114.16
+egg nunjucks (Async Await) | 5967 | 8.31 | 4.68 | 114.16
 
 ### Last Details
 
