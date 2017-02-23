@@ -41,6 +41,7 @@ egg benchmark
 
 egg version | node version | QPS Generator | Async Await
 --- | --- | --- | ---
+1.0.0-rc.1 | 7.6.0 | 11069 | 11296
 0.12.0 | 7.6.0 | 10899 | 11122
 0.12.0 | 6.9.5 | 8880 | -
 0.11.0 | 6.9.5 | 8889 | -
@@ -51,7 +52,7 @@ egg version | node version | QPS Generator | Async Await
 
 egg version | node version | QPS Generator | Async Await
 --- | --- | --- | ---
-1.0.0-rc.1 | 7.6.0 | 7216 | 7371
+1.0.0-rc.1 | 7.6.0 | 6278 | 6350
 0.12.0 | 7.6.0 | 7216 | 7371
 0.12.0 | 6.9.5 | 5967 | -
 0.11.0 | 6.9.5 | 6057 | -
@@ -62,7 +63,7 @@ egg version | node version | QPS Generator | Async Await
 
 egg version | node version | QPS Generator | Async Await
 --- | --- | --- | ---
-1.0.0-rc.1 | 7.6.0 | 7216 | 7371
+1.0.0-rc.1 | 7.6.0 | 7333 | 7372
 
 ### passport
 
@@ -70,6 +71,7 @@ egg version | node version | QPS Generator | Async Await
 
 egg version | node version | QPS Generator | Async Await
 --- | --- | --- | ---
+1.0.0-rc.1 | 7.6.0 | 10039 | 10438
 0.12.0 | 7.6.0 | 9981 | 10436
 0.12.0 | 6.9.5 | 7943 | -
 
@@ -78,20 +80,22 @@ egg version | node version | QPS Generator | Async Await
 - node: 7.6.0
 - koa: 1.2.5
 - toa: 2.6.0
-- egg: 0.12.0
+- egg: 1.0.0-rc.1
 
-Scene | QPS | Avg RT (ms) | Stdev RT | Max RT
----   | --- | ---         | ---      | ---
-koa Hello World | 17923 | 2.73 | 1.19 | 54.76
-toa Hello World | 18353 | 2.94 | 2.26 | 39.05
-egg Hello World | 10899 | 4.45 | 1.55 | 69.40
-egg Hello World (Async Await) | 11122 | 4.34 | 1.12 | 57.48
-egg Hello Passport | 9981 | 4.91 | 2.26 | 83.50
-egg Hello Passport (Async Await) | 10436 | 4.60 | 0.64 | 38.03
-koa nunjucks | 12414 | 4.09 | 2.76 | 82.85
-toa nunjucks | 11815 | 4.56 | 3.37 | 67.71
-egg nunjucks | 7216 | 7.02 | 4.51 | 119.89
-egg nunjucks (Async Await) | 7371 | 6.74 | 3.14 | 70.87
+Scene | QPS
+---   | ---
+koa Hello World | 18538
+toa Hello World | 18405
+egg Hello World | 11069
+egg Hello World (Async Await) | 11296
+egg Hello Passport | 10039
+egg Hello Passport (Async Await) | 10438
+koa nunjucks | 12093
+toa nunjucks | 11548
+egg nunjucks | 6278
+egg nunjucks (Async Await) | 6350
+egg ejs | 7333
+egg ejs (Async Await) | 7372
 
 ### Last Details
 
@@ -103,44 +107,44 @@ egg nunjucks (Async Await) | 7371 | 6.74 | 3.14 | 70.87
 Running 10s test @ http://127.0.0.1:7002/
   8 threads and 50 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     2.73ms    1.19ms  54.76ms   98.13%
-    Req/Sec     2.25k   192.02     2.52k    96.50%
-  179343 requests in 10.01s, 27.02MB read
-Requests/sec:  17923.27
-Transfer/sec:      2.70MB
+    Latency     2.63ms    1.11ms  52.19ms   97.91%
+    Req/Sec     2.33k   208.22     2.58k    94.88%
+  185463 requests in 10.00s, 27.95MB read
+Requests/sec:  18538.45
+Transfer/sec:      2.79MB
 
 ------- toa hello -------
 
 Running 10s test @ http://127.0.0.1:7003/
   8 threads and 50 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     2.94ms    2.26ms  39.05ms   92.36%
-    Req/Sec     2.32k   538.84    16.61k    97.25%
-  185369 requests in 10.10s, 31.29MB read
-Requests/sec:  18353.21
-Transfer/sec:      3.10MB
+    Latency     2.97ms    2.35ms  49.13ms   93.08%
+    Req/Sec     2.31k   210.46     2.83k    76.88%
+  184319 requests in 10.01s, 31.11MB read
+Requests/sec:  18405.91
+Transfer/sec:      3.11MB
 
 ------- egg hello -------
 
 Running 10s test @ http://127.0.0.1:7001/
   8 threads and 50 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     4.45ms    1.55ms  69.40ms   96.77%
-    Req/Sec     1.37k   131.73     1.65k    75.00%
-  109099 requests in 10.01s, 36.62MB read
-Requests/sec:  10899.14
-Transfer/sec:      3.66MB
+    Latency     4.37ms    1.30ms  62.30ms   95.35%
+    Req/Sec     1.39k    79.25     1.49k    93.75%
+  110808 requests in 10.01s, 37.20MB read
+Requests/sec:  11069.34
+Transfer/sec:      3.72MB
 
 ------- egg hello (Async Await) -------
 
 Running 10s test @ http://127.0.0.1:7001/aa
   8 threads and 50 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     4.34ms    1.12ms  57.48ms   95.55%
-    Req/Sec     1.40k    61.39     1.95k    81.75%
-  111324 requests in 10.01s, 37.37MB read
-Requests/sec:  11122.52
-Transfer/sec:      3.73MB
+    Latency     4.27ms    1.01ms  51.45ms   95.65%
+    Req/Sec     1.42k    57.97     1.90k    81.50%
+  113072 requests in 10.01s, 37.96MB read
+Requests/sec:  11296.12
+Transfer/sec:      3.79MB
 ```
 
 #### nunjucks
@@ -151,44 +155,67 @@ Transfer/sec:      3.73MB
 Running 10s test @ http://127.0.0.1:7002/
   8 threads and 50 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     4.09ms    2.76ms  82.85ms   92.69%
-    Req/Sec     1.56k   241.61     2.00k    70.00%
-  124262 requests in 10.01s, 310.60MB read
-Requests/sec:  12414.23
-Transfer/sec:     31.03MB
+    Latency     4.13ms    2.27ms  69.02ms   92.58%
+    Req/Sec     1.52k   164.32     1.74k    86.25%
+  120992 requests in 10.00s, 302.43MB read
+Requests/sec:  12093.28
+Transfer/sec:     30.23MB
 
 ------- toa view -------
 
 Running 10s test @ http://127.0.0.1:7003/
   8 threads and 50 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     4.56ms    3.37ms  67.71ms   90.58%
-    Req/Sec     1.49k   143.71     1.79k    72.38%
-  118312 requests in 10.01s, 297.87MB read
-Requests/sec:  11815.36
-Transfer/sec:     29.75MB
+    Latency     4.68ms    3.67ms  82.82ms   90.79%
+    Req/Sec     1.45k   236.68     1.85k    59.12%
+  115684 requests in 10.02s, 291.26MB read
+Requests/sec:  11548.25
+Transfer/sec:     29.08MB
 
-------- egg view -------
+------- egg nunjucks view -------
 
-Running 10s test @ http://127.0.0.1:7001/
+Running 10s test @ http://127.0.0.1:7001/nunjucks
   8 threads and 50 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     7.02ms    4.51ms 119.89ms   90.40%
-    Req/Sec     0.91k   252.19     1.52k    76.00%
-  72351 requests in 10.03s, 194.23MB read
-Requests/sec:   7216.49
-Transfer/sec:     19.37MB
+    Latency     7.92ms    4.42ms 118.91ms   91.28%
+    Req/Sec   788.99     91.40     0.95k    72.00%
+  62885 requests in 10.02s, 169.36MB read
+Requests/sec:   6278.45
+Transfer/sec:     16.91MB
 
-------- egg view (Async Await) -------
+------- egg ejs view -------
 
-Running 10s test @ http://127.0.0.1:7001/aa
+Running 10s test @ http://127.0.0.1:7001/ejs
   8 threads and 50 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     6.74ms    3.14ms  70.87ms   90.21%
-    Req/Sec     0.93k    61.06     1.41k    78.75%
-  73881 requests in 10.02s, 198.76MB read
-Requests/sec:   7371.91
-Transfer/sec:     19.83MB
+    Latency     6.65ms    2.52ms  58.55ms   92.39%
+    Req/Sec     0.92k    66.77     1.21k    65.00%
+  73450 requests in 10.02s, 199.28MB read
+Requests/sec:   7333.62
+Transfer/sec:     19.90MB
+
+------- egg nunjucks view (Async Await) -------
+
+Running 10s test @ http://127.0.0.1:7001/nunjucks-aa
+  8 threads and 50 connections
+
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     7.74ms    3.21ms  61.01ms   91.10%
+    Req/Sec   798.13     49.01     1.06k    77.75%
+  63630 requests in 10.02s, 171.73MB read
+Requests/sec:   6350.39
+Transfer/sec:     17.14MB
+
+------- egg ejs view (Async Await) -------
+
+Running 10s test @ http://127.0.0.1:7001/ejs-aa
+  8 threads and 50 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     6.61ms    2.29ms  53.62ms   92.26%
+    Req/Sec     0.93k    43.47     1.17k    84.62%
+  73832 requests in 10.01s, 200.74MB read
+Requests/sec:   7372.62
+Transfer/sec:     20.05MB
 ```
 
 #### Hello Passport
@@ -199,20 +226,20 @@ Transfer/sec:     19.83MB
 Running 10s test @ http://127.0.0.1:7001/
   8 threads and 50 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     4.91ms    2.26ms  83.50ms   98.23%
-    Req/Sec     1.25k   126.68     1.38k    92.88%
-  99884 requests in 10.01s, 33.34MB read
-Requests/sec:   9981.20
-Transfer/sec:      3.33MB
+    Latency     4.85ms    2.35ms  87.95ms   97.51%
+    Req/Sec     1.27k   300.78     9.00k    96.75%
+  101402 requests in 10.10s, 33.85MB read
+Requests/sec:  10039.71
+Transfer/sec:      3.35MB
 
 ------- egg passport (Async Await) -------
 
 Running 10s test @ http://127.0.0.1:7001/aa
   8 threads and 50 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     4.60ms  644.10us  38.03ms   95.03%
-    Req/Sec     1.31k    36.83     1.69k    95.25%
-  104519 requests in 10.01s, 35.29MB read
-Requests/sec:  10436.83
+    Latency     4.61ms  815.73us  42.46ms   93.47%
+    Req/Sec     1.31k    45.24     1.57k    78.50%
+  104486 requests in 10.01s, 35.27MB read
+Requests/sec:  10438.46
 Transfer/sec:      3.52MB
 ```
