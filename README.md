@@ -51,11 +51,18 @@ egg version | node version | QPS Generator | Async Await
 
 egg version | node version | QPS Generator | Async Await
 --- | --- | --- | ---
+1.0.0-rc.1 | 7.6.0 | 7216 | 7371
 0.12.0 | 7.6.0 | 7216 | 7371
 0.12.0 | 6.9.5 | 5967 | -
 0.11.0 | 6.9.5 | 6057 | -
 0.10.0 | 6.9.5 | 5681 | -
 0.2.0 | 6.9.5 | 6732 | -
+
+### ejs
+
+egg version | node version | QPS Generator | Async Await
+--- | --- | --- | ---
+1.0.0-rc.1 | 7.6.0 | 7216 | 7371
 
 ### passport
 

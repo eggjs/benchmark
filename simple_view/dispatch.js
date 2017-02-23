@@ -10,5 +10,4 @@ if (workers > 4) {
 egg.startCluster({
   workers,
   baseDir: __dirname,
-  port: '7004',
 });
