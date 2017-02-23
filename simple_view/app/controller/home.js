@@ -7,7 +7,7 @@ module.exports = app => {
         user: {
           name: 'foobar',
         },
-        title: 'egg view example',
+        title: 'egg nunjucks view example',
       });
     }
 
@@ -16,7 +16,7 @@ module.exports = app => {
         user: {
           name: 'foobar',
         },
-        title: 'egg view example',
+        title: 'egg ejs view example',
       });
     }
   };
