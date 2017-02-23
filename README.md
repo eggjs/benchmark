@@ -82,20 +82,15 @@ egg version | node version | QPS Generator | Async Await
 - toa: 2.6.0
 - egg: 1.0.0-rc.1
 
-Scene | QPS
----   | ---
-koa Hello World | 18538
-toa Hello World | 18405
-egg Hello World | 11069
-egg Hello World (Async Await) | 11296
-egg Hello Passport | 10039
-egg Hello Passport (Async Await) | 10438
-koa nunjucks | 12093
-toa nunjucks | 11548
-egg nunjucks | 6278
-egg nunjucks (Async Await) | 6350
-egg ejs | 7333
-egg ejs (Async Await) | 7372
+Scene | QPS | Scene | QPS
+---   | --- | ---   | ---
+koa Hello World | 18538 | toa Hello World | 18405
+egg Hello World | 11069 | egg Hello World (Async Await) | 11296
+egg Hello Passport | 10039 | egg Hello Passport (Async Await) | 10438
+koa nunjucks | 12093 | toa nunjucks | 11548
+egg nunjucks | 6278 | egg nunjucks (Async Await) | 6350
+egg ejs | 7333 | egg ejs (Async Await) | 7372
+
 
 ### Last Details
 
