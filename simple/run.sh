@@ -9,6 +9,7 @@ pid=$!
 
 sleep 5
 curl 'http://127.0.0.1:7002/'
+curl 'http://127.0.0.1:7004/'
 curl 'http://127.0.0.1:7003/'
 curl 'http://127.0.0.1:7001/'
 curl 'http://127.0.0.1:7001/aa'
@@ -16,10 +17,20 @@ curl 'http://127.0.0.1:7001/aa'
 test `tail -c 1 $CSV` && printf "\n" >> $CSV
 
 echo ""
-echo "------- koa hello -------"
+echo "------- koa1 hello -------"
 echo ""
-printf "\"koa hello\"," >> $CSV
+printf "\"koa1 hello\"," >> $CSV
 wrk 'http://127.0.0.1:7002/' \
+  -d 10 \
+  -c 50 \
+  -t 8 \
+  -s $REPORT
+
+echo ""
+echo "------- koa2 hello -------"
+echo ""
+printf "\"koa2 hello\"," >> $CSV
+wrk 'http://127.0.0.1:7004/' \
   -d 10 \
   -c 50 \
   -t 8 \

@@ -13,7 +13,7 @@ cache:
   directories:
     - wrk/bin
 before_script:
-  - '[ ! -f wrk/bin/wrk ] && rm -rf wrk && git clone --depth 1 https://github.com/wg/wrk.git && make -j10 -C wrk && mkdir wrk/bin && mv wrk/wrk wrk/bin'
+  - '[ ! -f wrk/bin/wrk ] && rm -rf wrk && git clone --depth 1 https://github.com/wg/wrk.git && make -j10 -C wrk && mkdir wrk/bin && mv wrk/wrk wrk/bin || true'
   - export PATH=$PWD/wrk/bin:$PATH
 install:
   - npm i

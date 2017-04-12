@@ -4,14 +4,14 @@
   "description": "egg benchmark",
   "private": true,
   "dependencies": {
-    "egg": "^1.0.0-rc.1",
+    "egg": "^1.1.0",
     "egg-alinode": "^1.1.0",
     "egg-passport": "^1.0.0",
     "egg-view": "^1.0.0",
     "egg-view-ejs": "^1.0.0",
     "egg-view-nunjucks": "^2.0.0",
-    "koa": "^1.2.5",
-    "koa-router": "^5.4.0",
+    "koa": "^2.2.0",
+    "koa-router": "^7.1.1",
     "nunjucks": "^3.0.0",
     "toa": "^2.6.0",
     "toa-router": "^2.0.1"

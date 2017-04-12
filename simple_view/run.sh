@@ -9,6 +9,7 @@ pid=$!
 
 sleep 5
 curl 'http://127.0.0.1:7002/' -s | grep 'title'
+curl 'http://127.0.0.1:7004/' -s | grep 'title'
 curl 'http://127.0.0.1:7003/' -s | grep 'title'
 curl 'http://127.0.0.1:7001/nunjucks' -s | grep 'title'
 curl 'http://127.0.0.1:7001/ejs' -s | grep 'title'
@@ -18,10 +19,20 @@ curl 'http://127.0.0.1:7001/ejs-aa' -s | grep 'title'
 test `tail -c 1 $CSV` && printf "\n" >> $CSV
 
 echo ""
-echo "------- koa view -------"
+echo "------- koa1 view -------"
 echo ""
-printf "\"koa view\"," >> $CSV
+printf "\"koa1 view\"," >> $CSV
 wrk 'http://127.0.0.1:7002/' \
+  -d 10 \
+  -c 50 \
+  -t 8 \
+  -s $REPORT
+
+echo ""
+echo "------- koa2 view -------"
+echo ""
+printf "\"koa2 view\"," >> $CSV
+wrk 'http://127.0.0.1:7004/' \
   -d 10 \
   -c 50 \
   -t 8 \

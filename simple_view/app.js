@@ -3,6 +3,7 @@
 module.exports = app => {
   console.log('egg app core middlewares: %d, app middlewares: %d',
     app.config.coreMiddlewares.length, app.config.appMiddlewares.length);
-  require('./koa');
+  require('./koa1');
+  require('./koa2');
   require('./toa');
 };
