@@ -30,7 +30,7 @@
     "test-simple-view": "simple_view/run.sh",
     "test-simple-passport": "simple_passport/run.sh",
     "test": "cat stats-header.csv > stats.csv && npm run test-simple && npm run test-simple-view && npm run test-simple-passport",
-    "ci": "./install-wrk.sh && npm test",
+    "ci": "npm test",
     "autod": "autod"
   },
   "repository": {
