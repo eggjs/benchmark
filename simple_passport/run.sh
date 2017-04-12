@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-export PATH=`dirname $0`/../wrk:$PATH
 CSV=`dirname $0`/../stats.csv
 REPORT=`dirname $0`/../report.lua
 

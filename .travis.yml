@@ -2,9 +2,22 @@ sudo: false
 language: node_js
 node_js:
   - '7'
+matrix:
+  include:
+    - node_js: '8'
+      env: 'NVM_NODEJS_ORG_MIRROR=https://nodejs.org/download/test'
+  allow_failures:
+    # Allow the nightly installs to fail
+    - env: 'NVM_NODEJS_ORG_MIRROR=https://nodejs.org/download/test'
+cache:
+  directories:
+    - wrk/bin
+before_script:
+  - '[ ! -f wrk/bin/wrk ] && rm -rf wrk && git clone --depth 1 https://github.com/wg/wrk.git && make -j10 -C wrk && mkdir wrk/bin && mv wrk/wrk wrk/bin'
+  - export PATH=$PWD/wrk/bin:$PATH
 install:
-  - npm i npminstall && npminstall
+  - npm i
 script:
   - npm run ci
 after_script:
-  - npminstall codecov && codecov
+  - npm i codecov && codecov
