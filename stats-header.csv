@@ -1,1 +1,1 @@
-name,latency_min,latency_max,latency_mean,latency_stdev,duration,requests,bytes,req_per_sec,byte_per_sec
+config,name,latency_min,latency_max,latency_mean,latency_stdev,duration,requests,bytes,req_per_sec,byte_per_sec
