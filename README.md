@@ -38,6 +38,8 @@ egg benchmark
 
 ## egg versions benchmark
 
+- [plots view](https://fengmk2.com/egg/benchmark/)
+
 ### Hello World
 
 egg version | node version | QPS Generator | Async Await

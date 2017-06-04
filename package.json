@@ -4,7 +4,7 @@
   "description": "egg benchmark",
   "private": true,
   "dependencies": {
-    "egg": "^1.1.0",
+    "egg": "^1.4.0",
     "egg-alinode": "^1.1.0",
     "egg-passport": "^1.0.0",
     "egg-view": "^1.0.0",
