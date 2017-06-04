@@ -1,7 +1,6 @@
 sudo: false
 language: node_js
 node_js:
-  - '8'
   - '7'
 cache:
   directories:
@@ -9,9 +8,12 @@ cache:
 before_script:
   - '[ ! -f wrk/bin/wrk ] && rm -rf wrk && git clone --depth 1 https://github.com/wg/wrk.git && make -j10 -C wrk && mkdir wrk/bin && mv wrk/wrk wrk/bin || true'
   - export PATH=$PWD/wrk/bin:$PATH
-install:
-  - npm i
 script:
-  - npm run ci
+  - nvm i 8
+  - npm test
+  - mv stats.csv 8.csv
+  - nvm i 7
+  - npm test
+  - tail -n +2 8.csv >> stats.csv
 after_script:
   - cat stats.csv
