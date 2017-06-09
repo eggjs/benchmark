@@ -8,3 +8,4 @@ run/
 *.swp
 /wrk
 stats.csv
+node-*
