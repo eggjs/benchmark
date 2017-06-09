@@ -12,7 +12,6 @@ pid=$!
 sleep 5
 curl 'http://127.0.0.1:7002/' -s | grep 'title'
 curl 'http://127.0.0.1:7004/' -s | grep 'title'
-curl 'http://127.0.0.1:7003/' -s | grep 'title'
 curl 'http://127.0.0.1:7001/nunjucks' -s | grep 'title'
 curl 'http://127.0.0.1:7001/ejs' -s | grep 'title'
 curl 'http://127.0.0.1:7001/nunjucks-aa' -s | grep 'title'
@@ -41,17 +40,6 @@ echo "------- koa2 view -------"
 echo ""
 print_head "koa2 view"
 wrk 'http://127.0.0.1:7004/' \
-  -d 10 \
-  -c 50 \
-  -t 8 \
-  -s $REPORT
-
-sleep 3
-echo ""
-echo "------- toa view -------"
-echo ""
-print_head "toa view"
-wrk 'http://127.0.0.1:7003/' \
   -d 10 \
   -c 50 \
   -t 8 \

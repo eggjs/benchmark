@@ -5,5 +5,4 @@ module.exports = app => {
     app.config.coreMiddlewares.length, app.config.appMiddlewares.length);
   require('./koa1');
   require('./koa2');
-  require('./toa');
 };
