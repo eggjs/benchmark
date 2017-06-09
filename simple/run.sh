@@ -12,7 +12,6 @@ pid=$!
 sleep 5
 curl 'http://127.0.0.1:7002/'
 curl 'http://127.0.0.1:7004/'
-curl 'http://127.0.0.1:7003/'
 curl 'http://127.0.0.1:7001/'
 curl 'http://127.0.0.1:7001/aa'
 
@@ -39,17 +38,6 @@ echo "------- koa2 hello -------"
 echo ""
 print_head "koa2 hello"
 wrk 'http://127.0.0.1:7004/' \
-  -d 10 \
-  -c 50 \
-  -t 8 \
-  -s $REPORT
-
-sleep 3
-echo ""
-echo "------- toa hello -------"
-echo ""
-print_head "toa hello"
-wrk 'http://127.0.0.1:7003/' \
   -d 10 \
   -c 50 \
   -t 8 \

@@ -20,14 +20,10 @@ module.exports = {
     'nunjucks',
     'koa',
     'koa-router',
-    'toa',
-    'toa-router',
   ],
   semver: [
     'koa@1',
     'koa-router@5',
-    'toa@2',
-    'toa-router@2',
   ],
   exclude: [
     './test/fixtures',
