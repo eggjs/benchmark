@@ -9,3 +9,5 @@ run/
 /wrk
 stats.csv
 node-*
+tmp
+package-lock.json
