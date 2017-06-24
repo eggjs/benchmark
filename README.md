@@ -7,6 +7,12 @@
 
 egg benchmark
 
+## Commands
+
+* `npm test` to run all the benchmarks and store the results in `stats.csv` (requires `wrk`)
+* `./plot.sh` to compare performance between the latest releases of Node.js v7.x, v8.x, rc, nightly and v8-canary (requires `wrk` and `nvm`), then open `plot/index.html` to see the results
+  * Requires AJAX privilege to load data from `plot/all.csv`, you can run `python -m SimpleHTTPServer` then visit `http://localhost:8000/plot/` (or use any other static server) if you don't want to tweak browser settings
+
 ## Default Middleware
 
 - egg default enable 15 middlewares (6 security middlewares enable by default)
