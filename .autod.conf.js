@@ -10,6 +10,7 @@ module.exports = {
   dep: [
     'egg-alinode',
     'egg-view-nunjucks',
+    'egg-view-ejs',
     'egg-passport',
   ],
   devdep: [
@@ -22,13 +23,12 @@ module.exports = {
     'koa-router',
   ],
   semver: [
-    'koa@1',
-    'koa-router@5',
+    'koa@2',
+    'koa-router@7',
   ],
   exclude: [
     './test/fixtures',
     './dist',
     './wrk',
   ],
-  registry: 'https://r.cnpmjs.org',
 };
