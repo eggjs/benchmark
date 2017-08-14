@@ -1,7 +1,7 @@
 sudo: false
 language: node_js
 node_js:
-  - '7'
+  - '8'
 cache:
   directories:
     - wrk/bin
@@ -9,18 +9,20 @@ before_script:
   - '[ ! -f wrk/bin/wrk ] && rm -rf wrk && git clone --depth 1 https://github.com/wg/wrk.git && make -j10 -C wrk && mkdir wrk/bin && mv wrk/wrk wrk/bin || true'
   - export PATH=$PWD/wrk/bin:$PATH
 script:
-  - curl https://nodejs.org/download/v8-canary/v9.0.0-v8-canary20170609cd40078f1f/node-v9.0.0-v8-canary20170609cd40078f1f-linux-x64.tar.gz > node-latest.tgz
-  - tar zxf node-latest.tgz
-  - PATH=./node-v9.0.0-v8-canary20170609cd40078f1f-linux-x64/bin/:$PATH node -p 'process.versions'
-  - PATH=./node-v9.0.0-v8-canary20170609cd40078f1f-linux-x64/bin/:$PATH npm test
-  - mv stats.csv latest.csv
+  # 6.0.286.52
   - nvm i 8
   - node -p 'process.versions'
   - npm test
   - mv stats.csv 8.csv
+  # 5.8.283.41
+  - nvm i 8.2.1
+  - node -p 'process.versions'
+  - npm test
+  - mv stats.csv 8.2.1.csv
+  # 5.5.372.43
   - nvm i 7
   - node -p 'process.versions'
   - npm test
+  - tail -n +2 8.2.1.csv >> stats.csv
   - tail -n +2 8.csv >> stats.csv
-  - tail -n +2 latest.csv >> stats.csv
   - cat stats.csv
