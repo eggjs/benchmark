@@ -9,7 +9,12 @@ before_script:
   - '[ ! -f wrk/bin/wrk ] && rm -rf wrk && git clone --depth 1 https://github.com/wg/wrk.git && make -j10 -C wrk && mkdir wrk/bin && mv wrk/wrk wrk/bin || true'
   - export PATH=$PWD/wrk/bin:$PATH
 script:
-  # 6.0.286.52
+  # 6.2.414.32-node.8
+  - nvm i 9
+  - node -p 'process.versions'
+  - npm test
+  - mv stats.csv 9.csv
+  # 6.1.534.46
   - nvm i 8
   - node -p 'process.versions'
   - npm test
