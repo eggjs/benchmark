@@ -1,9 +1,9 @@
 'use strict';
 
-const koa = require('egg-core/node_modules/koa');
+const koa = require('koa');
 const nunjucks = require('nunjucks');
 const path = require('path');
-const router = require('egg-core/node_modules/koa-router')();
+const router = require('koa-router')();
 
 const app = koa();
 let n = 15;
@@ -43,5 +43,5 @@ router.get('/', function* () {
   });
 });
 
-console.log('koa1 app listen on 7002');
-app.listen(7002);
+console.log('koa1 app listen on 7001');
+app.listen(7001);
