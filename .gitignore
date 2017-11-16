@@ -11,5 +11,3 @@ stats.csv
 node-*
 tmp
 package-lock.json
-plot/all.csv
-
