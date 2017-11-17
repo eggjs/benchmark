@@ -20,7 +20,12 @@ d3.csv('./all.csv', function(d) {
 });
 
 function draw(svg, data) {
-  const margin = { top: 20, right: 20, bottom: 30, left: 40 };
+  const margin = {
+    top: 20,
+    right: 20,
+    bottom: 30,
+    left: 40,
+  };
   const width = +svg.attr('width') - margin.left - margin.right;
   const height = +svg.attr('height') - margin.top - margin.bottom;
   const canvas = svg.append('g')
@@ -38,13 +43,13 @@ function draw(svg, data) {
 
   const z = d3.scaleOrdinal()
     .range([
-      '#00bcd4', '#ffc107', '#8bc34a', '#ad8de4', '#f17e7e'
+      '#00bcd4', '#ffc107', '#8bc34a', '#ad8de4', '#f17e7e',
     ]);
 
   const groupKeys = Array.from(new Set(data.map(d => d.name)));
   const valueKeys = [
     'req_per_sec',
-    // 'byte_per_sec'
+  // 'byte_per_sec'
   ];
   const configKeys = Array.from(new Set(data.map(d => d.config)));
   const barKeys = [];
@@ -64,28 +69,42 @@ function draw(svg, data) {
     .selectAll('g')
     .data(nested)
     .enter()
-      .append('g');
+    .append('g');
+
+  function formatNest(d) {
+    const values = d.values;
+    const result = [];
+    for (const item of values) {
+      for (const v of valueKeys) {
+        result.push({
+          config: item.config,
+          name: item.name,
+          key: v,
+          value: item[v],
+        });
+      }
+    }
+    return result;
+  }
 
   const bars = groups
     .attr('transform', d => `translate(${groupX(d.key)}, 0)`)
     .selectAll('rect')
-    .data(function(d) {
-      const values = d.values;
-      const result = [];
-      for (const item of values) {
-        for (const v of valueKeys) {
-          result.push({
-            config: item.config,
-            name: item.name,
-            key: v,
-            value: item[v],
-          });
-        }
-      }
-      return result;
-    })
+    .data(formatNest)
     .enter()
-      .append('rect');
+    .append('rect');
+
+  groups
+    // .attr('transform', d => `translate(${groupX(d.key)}, 0)`)
+    .selectAll('text')
+    .data(formatNest)
+    .enter()
+    .append('text')
+    .text(d => d.value)
+    .attr('x', function(d) {
+      return barX(`${d.key}:${d.config}`) + (barX.bandwidth() - this.getComputedTextLength()) / 2;
+    })
+    .attr('y', d => y(d.value) - 10);
 
   bars
     .attr('x', d => barX(`${d.key}:${d.config}`))
@@ -96,21 +115,21 @@ function draw(svg, data) {
     .attr('fill', d => z(d.config));
 
   canvas.append('g')
-      .attr('class', 'axis')
-      .attr('transform', `translate(0, ${height})`)
-      .call(d3.axisBottom(groupX));
+    .attr('class', 'axis')
+    .attr('transform', `translate(0, ${height})`)
+    .call(d3.axisBottom(groupX));
 
   canvas.append('g')
-      .attr('class', 'axis')
-      .call(d3.axisLeft(y).ticks(null, 's'))
+    .attr('class', 'axis')
+    .call(d3.axisLeft(y).ticks(null, 's'))
     .append('text')
-      .attr('x', 2)
-      .attr('y', y(y.ticks().pop()) + 0.5)
-      .attr('dy', '0.32em')
-      .attr('fill', '#000')
-      .attr('font-weight', 'bold')
-      .attr('text-anchor', 'start')
-      .text('req/s');
+    .attr('x', 2)
+    .attr('y', y(y.ticks().pop()) + 0.5)
+    .attr('dy', '0.32em')
+    .attr('fill', '#000')
+    .attr('font-weight', 'bold')
+    .attr('text-anchor', 'start')
+    .text('req/s');
 
   const legend = canvas.append('g')
     .attr('font-family', 'sans-serif')
@@ -119,20 +138,20 @@ function draw(svg, data) {
     .selectAll('g')
     .data(configKeys.slice().reverse())
     .enter()
-      .append('g');
+    .append('g');
 
   legend
     .attr('transform', (d, i) => `translate(0, ${i * 20})`);
 
   legend.append('rect')
-      .attr('x', width - 19)
-      .attr('width', 19)
-      .attr('height', 19)
-      .attr('fill', z);
+    .attr('x', width - 19)
+    .attr('width', 19)
+    .attr('height', 19)
+    .attr('fill', z);
 
   legend.append('text')
-      .attr('x', width - 24)
-      .attr('y', 9.5)
-      .attr('dy', '0.32em')
-      .text(d => d);
+    .attr('x', width - 24)
+    .attr('y', 9.5)
+    .attr('dy', '0.32em')
+    .text(d => d);
 }

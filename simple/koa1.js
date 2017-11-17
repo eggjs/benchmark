@@ -1,8 +1,8 @@
 'use strict';
 
 // koa 1 need those versions
-const koa = require('egg-core/node_modules/koa');
-const router = require('egg-core/node_modules/koa-router')();
+const koa = require('koa');
+const router = require('koa-router')();
 
 const app = koa();
 let n = 15;
@@ -19,5 +19,5 @@ router.get('/', function* () {
   this.body = 'Hello World, koa1\n';
 });
 
-console.log('koa1 app listen on 7002');
-app.listen(7002);
+console.log('koa1 app listen on 7001');
+app.listen(7001);

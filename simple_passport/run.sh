@@ -23,9 +23,9 @@ test `tail -c 1 $CSV` && printf "\n" >> $CSV
 
 sleep 3
 echo ""
-echo "------- egg passport -------"
+echo "------- egg1 passport -------"
 echo ""
-print_head "egg passport"
+print_head "egg1 passport"
 wrk 'http://127.0.0.1:7001/' \
   -d 10 \
   -c 50 \
@@ -34,10 +34,32 @@ wrk 'http://127.0.0.1:7001/' \
 
 sleep 3
 echo ""
-echo "------- egg passport (Async Await) -------"
+echo "------- egg1 passport (Async Await) -------"
 echo ""
-print_head "egg passport aa"
+print_head "egg1 passport aa"
 wrk 'http://127.0.0.1:7001/aa' \
+  -d 10 \
+  -c 50 \
+  -t 8 \
+  -s $REPORT
+
+sleep 3
+echo ""
+echo "------- egg2 passport -------"
+echo ""
+print_head "egg2 passport"
+wrk 'http://127.0.0.1:7002/' \
+  -d 10 \
+  -c 50 \
+  -t 8 \
+  -s $REPORT
+
+sleep 3
+echo ""
+echo "------- egg2 passport (Async Await) -------"
+echo ""
+print_head "egg2 passport aa"
+wrk 'http://127.0.0.1:7002/aa' \
   -d 10 \
   -c 50 \
   -t 8 \

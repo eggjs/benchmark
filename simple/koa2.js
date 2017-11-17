@@ -1,7 +1,7 @@
 'use strict';
 
-const Koa = require('koa');
-const router = require('koa-router')();
+const Koa = require('egg-core/node_modules/koa');
+const router = require('egg-core/node_modules/koa-router')();
 
 const app = new Koa();
 let n = 15;
@@ -19,5 +19,5 @@ router.get('/', async (ctx) => {
 app.use(router.routes())
   .use(router.allowedMethods());
 
-console.log('koa2 app listen on 7004');
-app.listen(7004);
+console.log('koa2 app listen on 7002');
+app.listen(7002);

@@ -18,17 +18,18 @@ module.exports = {
     'eslint',
     'eslint-config-egg',
     'webstorm-disable-index',
-    'nunjucks',
-    'koa',
-    'koa-router',
   ],
   semver: [
-    'koa@2',
-    'koa-router@7',
+    'koa@1',
+    'koa-router@5',
   ],
   exclude: [
     './test/fixtures',
     './dist',
     './wrk',
+  ],
+  keep: [
+    'egg',
+    'egg-core',
   ],
 };

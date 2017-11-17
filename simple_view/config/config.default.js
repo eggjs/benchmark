@@ -16,3 +16,7 @@ exports.view = {
     '.ejs': 'ejs',
   },
 };
+
+exports.security = {
+  csrf: false,
+};
