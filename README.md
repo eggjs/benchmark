@@ -18,6 +18,7 @@ egg benchmark
 - egg default enable 15 middlewares (6 security middlewares enable by default)
 - enable router
 - passport has 17 middlewares (15 default, 2 passport middlewares)
+- csrf are disabled, because in most situation we won't caculate csrf token and set to cookie
 
 ## Scenes
 
@@ -37,9 +38,12 @@ egg benchmark
 - MacBook Pro (Retina, 15-inch, Late 2013)
 - 2 GHz Intel Core i7 (only use 4 core for benchmark)
 
+## CPU Profiler
+
+![image](https://user-images.githubusercontent.com/985607/32961302-a6d1d506-cb8d-11e7-9273-160d8ba77da6.png)
+
 ## Known issues
 
-- [ensure csrf token exists](https://github.com/eggjs/egg-security/blob/master/app/extend/context.js#L75): It's cause get and set cookie on every request.
-  ![image](https://cloud.githubusercontent.com/assets/156269/22675417/8fd55b44-ed20-11e6-8ac8-77a791e558dd.png)
+- `Date.now()` cost a lot of CPU time(7%) in `meta` middleware and `CreateContext` method.
 
 ## [Last Results](https://eggjs.github.io/benchmark/plot/)
