@@ -46,4 +46,7 @@ egg benchmark
 
 - `Date.now()` cost a lot of CPU time(7%) in `meta` middleware and `CreateContext` method.
 
-## [Last Results](https://eggjs.github.io/benchmark/plot/)
+## Last Results
+
+- [Visualization](https://eggjs.github.io/benchmark/plot/)
+- [Statistics data](https://github.com/eggjs/benchmark/blob/master/plot/all.csv)
