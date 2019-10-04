@@ -12,7 +12,8 @@
     "egg1": "^1.11.0",
     "koa": "^1.4.1",
     "koa-router": "^5.4.2",
-    "nunjucks": "^3.0.1"
+    "nunjucks": "^3.0.1",
+    "snyk": "^1.230.5"
   },
   "devDependencies": {
     "autod": "^3.0.1",
@@ -29,12 +30,15 @@
     "test-simple-passport": "simple_passport/run.sh",
     "test": "cat stats-header.csv > stats.csv && npm run test-simple && npm run test-simple-view && npm run test-simple-passport && cp stats.csv plot/all.csv",
     "ci": "npm test",
-    "autod": "autod"
+    "autod": "autod",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/eggjs/benchmark.git"
   },
   "author": "fengmk2 <fengmk2@gmail.com> (https://fengmk2.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
