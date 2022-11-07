@@ -29,6 +29,15 @@ if (cluster.isMaster) {
     port: 7005,
     framework: 'egg3',
   });
+
+  egg3.startCluster({
+    startMode: 'worker_threads',
+    workers: 1,
+    ports: [ 7006 ],
+    baseDir: __dirname,
+    framework: 'egg3',
+  });
+
   for (let i = 0; i < workers; i++) {
     cluster.fork();
   }
