@@ -10,12 +10,13 @@ EGG_SERVER_ENV=prod node $NODE_FLAGS `dirname $0`/dispatch.js $1 &
 pid=$!
 
 sleep 5
-curl 'http://127.0.0.1:7001/' -s | grep 'title'
 curl 'http://127.0.0.1:7002/' -s | grep 'title'
 curl 'http://127.0.0.1:7003/nunjucks' -s | grep 'title'
 curl 'http://127.0.0.1:7003/ejs' -s | grep 'title'
 curl 'http://127.0.0.1:7004/nunjucks' -s | grep 'title'
 curl 'http://127.0.0.1:7004/ejs' -s | grep 'title'
+curl 'http://127.0.0.1:7005/nunjucks' -s | grep 'title'
+curl 'http://127.0.0.1:7005/ejs' -s | grep 'title'
 
 test `tail -c 1 $CSV` && printf "\n" >> $CSV
 
@@ -24,16 +25,6 @@ function print_head {
   printf "\"$EGG, $NODE\"," >> $CSV
   printf "\"$NAME\"," >> $CSV
 }
-
-echo ""
-echo "------- koa1 view -------"
-echo ""
-print_head "koa1 view"
-wrk 'http://127.0.0.1:7001/' \
-  -d 10 \
-  -c 50 \
-  -t 8 \
-  -s $REPORT
 
 echo ""
 echo "------- koa2 view -------"
@@ -89,4 +80,28 @@ wrk 'http://127.0.0.1:7004/ejs' \
   -t 8 \
   -s $REPORT
 
+sleep 3
+echo ""
+echo "------- egg3 nunjucks view -------"
+echo ""
+print_head "egg3 nunjucks view"
+wrk 'http://127.0.0.1:7005/nunjucks' \
+  -d 10 \
+  -c 50 \
+  -t 8 \
+  -s $REPORT
+
+sleep 3
+echo ""
+echo "------- egg3 ejs view -------"
+echo ""
+print_head "egg3 ejs view"
+wrk 'http://127.0.0.1:7005/ejs' \
+  -d 10 \
+  -c 50 \
+  -t 8 \
+  -s $REPORT
+
 kill $pid
+
+sleep 8

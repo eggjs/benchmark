@@ -43,3 +43,5 @@ wrk 'http://127.0.0.1:7002/' \
   -s $REPORT
 
 kill $pid
+
+sleep 8

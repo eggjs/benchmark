@@ -1,5 +1,5 @@
-const Koa = require('egg-core/node_modules/koa');
-const router = require('egg-core/node_modules/koa-router')();
+const Koa = require('koa');
+const router = require('koa-router')();
 
 const app = new Koa();
 let n = 15;

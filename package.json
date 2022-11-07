@@ -10,8 +10,8 @@
     "egg1": "^1.11.0",
     "egg2": "^2.37.0",
     "egg3": "^3.3.3",
-    "koa": "^1.4.1",
-    "koa-router": "^5.4.2",
+    "koa": "^2.13.4",
+    "koa-router": "^12.0.0",
     "nunjucks": "^3.0.1"
   },
   "devDependencies": {
@@ -26,7 +26,7 @@
     "test-simple-view": "simple_view/run.sh",
     "test-simple-passport": "simple_passport/run.sh",
     "test": "cat stats-header.csv > stats.csv && npm run test-simple && npm run test-simple-view && npm run test-simple-passport && cp stats.csv plot/all.csv",
-    "ci": "npm test"
+    "ci": "EGG_SERVER_ENV=prod npm test"
   },
   "repository": {
     "type": "git",

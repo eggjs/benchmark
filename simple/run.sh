@@ -10,7 +10,6 @@ EGG_SERVER_ENV=prod node $NODE_FLAGS `dirname $0`/dispatch.js $1 &
 pid=$!
 
 sleep 5
-curl 'http://127.0.0.1:7001/'
 curl 'http://127.0.0.1:7002/'
 curl 'http://127.0.0.1:7003/'
 curl 'http://127.0.0.1:7004/'
@@ -22,16 +21,6 @@ function print_head {
   printf "\"$EGG, $NODE\"," >> $CSV
   printf "\"$NAME\"," >> $CSV
 }
-
-echo ""
-echo "------- koa1 hello -------"
-echo ""
-print_head "koa1 hello"
-wrk 'http://127.0.0.1:7001/' \
-  -d 10 \
-  -c 50 \
-  -t 8 \
-  -s $REPORT
 
 echo ""
 echo "------- koa2 hello -------"
@@ -88,3 +77,5 @@ wrk 'http://127.0.0.1:7005/' \
 #   -s $REPORT
 
 kill $pid
+
+sleep 8

@@ -41,6 +41,5 @@ if (cluster.isMaster) {
     cluster.fork();
   }
 } else {
-  require('./koa1');
   require('./koa2');
 }
