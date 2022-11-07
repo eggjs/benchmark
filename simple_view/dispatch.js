@@ -1,6 +1,5 @@
-'use strict';
-
-const egg = require('egg');
+const egg3 = require('egg3');
+const egg2 = require('egg2');
 const egg1 = require('egg1');
 const cluster = require('cluster');
 
@@ -17,15 +16,31 @@ if (cluster.isMaster) {
     framework: 'egg1',
   });
 
-  egg.startCluster({
+  egg2.startCluster({
     workers,
     baseDir: __dirname,
     port: 7004,
+    framework: 'egg2',
   });
+
+  egg3.startCluster({
+    workers,
+    baseDir: __dirname,
+    port: 7005,
+    framework: 'egg3',
+  });
+
+  egg3.startCluster({
+    startMode: 'worker_threads',
+    workers: 1,
+    ports: [ 7006 ],
+    baseDir: __dirname,
+    framework: 'egg3',
+  });
+
   for (let i = 0; i < workers; i++) {
     cluster.fork();
   }
 } else {
-  require('./koa1');
   require('./koa2');
 }

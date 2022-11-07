@@ -1,6 +1,4 @@
 /* globals d3 */
-'use strict';
-
 d3.csv('./all.csv', function(d) {
   return {
     config: d.config,
@@ -14,9 +12,6 @@ d3.csv('./all.csv', function(d) {
   draw(d3.select('#hello-plot'), data.filter(d => d.name.indexOf('hello') !== -1));
   draw(d3.select('#view-plot'), data.filter(d => d.name.indexOf('view') !== -1));
   draw(d3.select('#passport-plot'), data.filter(d => d.name.indexOf('passport') !== -1));
-  draw(d3.select('#aa-plot'),
-    data.filter(d => d.name.indexOf('aa') !== -1)
-      .concat(data.filter(d => d.name.indexOf('koa2') !== -1)));
 });
 
 function draw(svg, data) {

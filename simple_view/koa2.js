@@ -1,9 +1,7 @@
-'use strict';
-
-const Koa = require('egg-core/node_modules/koa');
+const Koa = require('koa');
 const nunjucks = require('nunjucks');
 const path = require('path');
-const router = require('egg-core/node_modules/koa-router')();
+const router = require('koa-router')();
 
 const app = new Koa();
 let n = 15;
@@ -32,7 +30,7 @@ function render(name, locals) {
   });
 }
 
-router.get('/', async (ctx) => {
+router.get('/', async ctx => {
   ctx.body = await render('nunjucks/home.html', {
     user: {
       name: 'fookoa',

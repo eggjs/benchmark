@@ -4,37 +4,34 @@
   "description": "egg benchmark",
   "private": true,
   "dependencies": {
-    "egg": "^2.0.0",
-    "egg-alinode": "^1.1.1",
     "egg-passport": "^2.0.0",
     "egg-view-ejs": "^2.0.0",
     "egg-view-nunjucks": "^2.1.4",
     "egg1": "^1.11.0",
-    "koa": "^1.4.1",
-    "koa-router": "^5.4.2",
+    "egg2": "^2.37.0",
+    "egg3": "^3.3.3",
+    "koa": "^2.13.4",
+    "koa-router": "^12.0.0",
     "nunjucks": "^3.0.1"
   },
   "devDependencies": {
-    "autod": "^3.0.1",
-    "eslint": "^4.11.0",
-    "eslint-config-egg": "^5.1.1",
-    "webstorm-disable-index": "^1.2.0"
+    "eslint": "^8.27.0",
+    "eslint-config-egg": "^12.1.0"
   },
   "engines": {
-    "node": ">=7.6.0"
+    "node": ">=14.20.0"
   },
   "scripts": {
     "test-simple": "simple/run.sh",
     "test-simple-view": "simple_view/run.sh",
     "test-simple-passport": "simple_passport/run.sh",
     "test": "cat stats-header.csv > stats.csv && npm run test-simple && npm run test-simple-view && npm run test-simple-passport && cp stats.csv plot/all.csv",
-    "ci": "npm test",
-    "autod": "autod"
+    "ci": "EGG_SERVER_ENV=prod npm test"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/eggjs/benchmark.git"
   },
-  "author": "fengmk2 <fengmk2@gmail.com> (https://fengmk2.com)",
+  "author": "fengmk2 <fengmk2@gmail.com> (https://github.com/fengmk2)",
   "license": "MIT"
 }

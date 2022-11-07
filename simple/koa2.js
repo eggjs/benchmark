@@ -1,7 +1,5 @@
-'use strict';
-
-const Koa = require('egg-core/node_modules/koa');
-const router = require('egg-core/node_modules/koa-router')();
+const Koa = require('koa');
+const router = require('koa-router')();
 
 const app = new Koa();
 let n = 15;
@@ -12,7 +10,7 @@ while (n--) {
   });
 }
 
-router.get('/', async (ctx) => {
+router.get('/', async ctx => {
   ctx.body = 'Hello World, koa2\n';
 });
 
