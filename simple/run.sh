@@ -14,6 +14,7 @@ curl 'http://127.0.0.1:7003/'
 curl 'http://127.0.0.1:7004/'
 curl 'http://127.0.0.1:7005/'
 curl 'http://127.0.0.1:7006/'
+curl 'http://127.0.0.1:8080/'
 
 test `tail -c 1 $CSV` && printf "\n" >> $CSV
 
@@ -68,12 +69,23 @@ wrk 'http://127.0.0.1:7005/' \
   -t 8 \
   -s $REPORT
 
+# sleep 3
+# echo ""
+# echo "------- egg3 hello with worker_threads=1 -------"
+# echo ""
+# print_head "egg3" "egg3 hello with worker_threads=1"
+# wrk 'http://127.0.0.1:7006/' \
+#   -d 10 \
+#   -c 50 \
+#   -t 8 \
+#   -s $REPORT
+
 sleep 3
 echo ""
-echo "------- egg3 hello with worker_threads=1 -------"
+echo "------- egg3 hello with worker_threads=4 -------"
 echo ""
-print_head "egg3" "egg3 hello with worker_threads=1"
-wrk 'http://127.0.0.1:7006/' \
+print_head "egg3" "egg3 hello with worker_threads=4"
+wrk 'http://127.0.0.1:8080/' \
   -d 10 \
   -c 50 \
   -t 8 \
