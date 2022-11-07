@@ -13,9 +13,7 @@ sleep 5
 curl 'http://127.0.0.1:7001/'
 curl 'http://127.0.0.1:7002/'
 curl 'http://127.0.0.1:7003/'
-curl 'http://127.0.0.1:7003/aa'
 curl 'http://127.0.0.1:7004/'
-curl 'http://127.0.0.1:7004/aa'
 
 test `tail -c 1 $CSV` && printf "\n" >> $CSV
 
@@ -58,17 +56,6 @@ wrk 'http://127.0.0.1:7003/' \
 
 sleep 3
 echo ""
-echo "------- egg1 hello (Async Await) -------"
-echo ""
-print_head "egg1 hello aa"
-wrk 'http://127.0.0.1:7003/aa' \
-  -d 10 \
-  -c 50 \
-  -t 8 \
-  -s $REPORT
-
-sleep 3
-echo ""
 echo "------- egg2 hello -------"
 echo ""
 print_head "egg2 hello"
@@ -80,13 +67,24 @@ wrk 'http://127.0.0.1:7004/' \
 
 sleep 3
 echo ""
-echo "------- egg2 hello (Async Await) -------"
+echo "------- egg3 hello -------"
 echo ""
-print_head "egg2 hello aa"
-wrk 'http://127.0.0.1:7004/aa' \
+print_head "egg3 hello"
+wrk 'http://127.0.0.1:7005/' \
   -d 10 \
   -c 50 \
   -t 8 \
   -s $REPORT
+
+# sleep 3
+# echo ""
+# echo "------- egg3 hello with worker_threads -------"
+# echo ""
+# print_head "egg3 hello with worker_threads"
+# wrk 'http://127.0.0.1:7006/' \
+#   -d 10 \
+#   -c 50 \
+#   -t 8 \
+#   -s $REPORT
 
 kill $pid

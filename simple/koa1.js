@@ -1,5 +1,3 @@
-'use strict';
-
 // koa 1 need those versions
 const koa = require('koa');
 const router = require('koa-router')();

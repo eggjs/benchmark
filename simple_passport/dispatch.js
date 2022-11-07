@@ -1,6 +1,4 @@
-'use strict';
-
-const egg = require('egg');
+const egg2 = require('egg2');
 const egg1 = require('egg1');
 
 let workers = Number(process.argv[2] || require('os').cpus().length);
@@ -15,8 +13,9 @@ egg1.startCluster({
   port: 7001,
 });
 
-egg.startCluster({
+egg2.startCluster({
   workers,
   baseDir: __dirname,
   port: 7002,
+  framework: 'egg2',
 });

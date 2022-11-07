@@ -1,10 +1,5 @@
 # benchmark
 
-[![build status][travis-image]][travis-url]
-
-[travis-image]: https://img.shields.io/travis/eggjs/benchmark.svg?style=flat-square
-[travis-url]: https://travis-ci.org/eggjs/benchmark
-
 egg benchmark
 
 ## Commands
@@ -32,6 +27,8 @@ egg benchmark
 - koa2: `wrk http://127.0.0.1:7002/ -d 10 -c 50 -t 8`
 - egg1: `wrk http://127.0.0.1:7003/ -d 10 -c 50 -t 8`
 - egg2: `wrk http://127.0.0.1:7004/ -d 10 -c 50 -t 8`
+- egg3: `wrk http://127.0.0.1:7005/ -d 10 -c 50 -t 8`
+- egg3 with worker_threads: `wrk http://127.0.0.1:7006/ -d 10 -c 50 -t 8`
 
 ## Server
 

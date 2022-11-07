@@ -1,7 +1,7 @@
 sudo: false
 language: node_js
 node_js:
-  - '8'
+  - '14'
 cache:
   directories:
     - wrk/bin
@@ -9,25 +9,19 @@ before_script:
   - '[ ! -f wrk/bin/wrk ] && rm -rf wrk && git clone --depth 1 https://github.com/wg/wrk.git && make -j10 -C wrk && mkdir wrk/bin && mv wrk/wrk wrk/bin || true'
   - export PATH=$PWD/wrk/bin:$PATH
 script:
-  # 6.2.414.32-node.8
-  - nvm i 9
+  - nvm i 14
   - node -p 'process.versions'
   - npm test
-  - mv stats.csv 9.csv
-  # 6.1.534.46
-  - nvm i 8
+  - mv stats.csv 14.csv
+  - nvm i 16
   - node -p 'process.versions'
   - npm test
-  - mv stats.csv 8.csv
-  # 5.8.283.41
-  - nvm i 8.2.1
+  - mv stats.csv 16.csv
+  - nvm i 18
   - node -p 'process.versions'
   - npm test
-  - mv stats.csv 8.2.1.csv
-  # 5.5.372.43
-  - nvm i 7
+  - mv stats.csv 18.csv
+  - nvm i 19
   - node -p 'process.versions'
   - npm test
-  - tail -n +2 8.2.1.csv >> stats.csv
-  - tail -n +2 8.csv >> stats.csv
-  - cat stats.csv
+  - mv stats.csv 19.csv

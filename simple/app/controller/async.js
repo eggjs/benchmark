@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports = app => {
   return class Async extends app.Controller {
     async index() {
