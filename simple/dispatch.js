@@ -9,6 +9,8 @@ if (workers > 4) {
 }
 
 if (cluster.isMaster) {
+  console.log('egg-cluster version: %s', require('egg-cluster/package.json').version);
+
   egg1.startCluster({
     workers,
     baseDir: __dirname,
