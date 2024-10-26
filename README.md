@@ -10,30 +10,30 @@ egg benchmark
 
 ## Default Middleware
 
-- egg default enable 15 middlewares (6 security middlewares enable by default)
-- enable router
-- passport has 17 middlewares (15 default, 2 passport middlewares)
-- csrf are disabled, because in most situation we won't caculate csrf token and set to cookie
+* egg default enable 15 middlewares (6 security middlewares enable by default)
+* enable router
+* passport has 17 middlewares (15 default, 2 passport middlewares)
+* csrf are disabled, because in most situation we won't caculate csrf token and set to cookie
 
 ## Scenes
 
-- Hello World: `$ EGG_SERVER_ENV=prod node benchmarks/simple/dispatch.js`
-- nunjucks: `$ EGG_SERVER_ENV=prod node benchmarks/simple_view/dispatch.js`
-- Empty passport: `$ EGG_SERVER_ENV=prod node benchmarks/simple_passport/dispatch.js`
+* Hello World: `$ EGG_SERVER_ENV=prod node benchmarks/simple/dispatch.js`
+* nunjucks: `$ EGG_SERVER_ENV=prod node benchmarks/simple_view/dispatch.js`
+* Empty passport: `$ EGG_SERVER_ENV=prod node benchmarks/simple_passport/dispatch.js`
 
 ## Scripts
 
-- koa1: `wrk http://127.0.0.1:7001/ -d 10 -c 50 -t 8`
-- koa2: `wrk http://127.0.0.1:7002/ -d 10 -c 50 -t 8`
-- egg1: `wrk http://127.0.0.1:7003/ -d 10 -c 50 -t 8`
-- egg2: `wrk http://127.0.0.1:7004/ -d 10 -c 50 -t 8`
-- egg3: `wrk http://127.0.0.1:7005/ -d 10 -c 50 -t 8`
-- egg3 with worker_threads: `wrk http://127.0.0.1:7006/ -d 10 -c 50 -t 8`
+* koa1: `wrk http://127.0.0.1:7001/ -d 10 -c 50 -t 8`
+* koa2: `wrk http://127.0.0.1:7002/ -d 10 -c 50 -t 8`
+* egg1: `wrk http://127.0.0.1:7003/ -d 10 -c 50 -t 8`
+* egg2: `wrk http://127.0.0.1:7004/ -d 10 -c 50 -t 8`
+* egg3: `wrk http://127.0.0.1:7005/ -d 10 -c 50 -t 8`
+* egg3 with worker_threads: `wrk http://127.0.0.1:7006/ -d 10 -c 50 -t 8`
 
 ## Server
 
-- MacBook Pro (Retina, 15-inch, Late 2013)
-- 2 GHz Intel Core i7 (only use 4 core for benchmark)
+* MacBook Pro (Retina, 15-inch, Late 2013)
+* 2 GHz Intel Core i7 (only use 4 core for benchmark)
 
 ## CPU Profiler
 
@@ -41,9 +41,13 @@ egg benchmark
 
 ## Known issues
 
-- `Date.now()` cost a lot of CPU time(7%) in `meta` middleware and `CreateContext` method.
+* `Date.now()` cost a lot of CPU time(7%) in `meta` middleware and `CreateContext` method.
 
 ## Last Results
 
-- [Visualization](https://eggjs.github.io/benchmark/plot/)
-- [Statistics data](https://github.com/eggjs/benchmark/blob/master/plot/all.csv)
+* [Visualization](https://eggjs.github.io/benchmark/plot/)
+* [Statistics data](https://github.com/eggjs/benchmark/blob/master/plot/all.csv)
+
+## Contributors
+
+[![contributors](https://contrib.rocks/image?repo=eggjs/benchmark&max=240&columns=26)](https://github.com/eggjs/benchmark/graphs/contributors)

@@ -14,6 +14,7 @@ curl 'http://127.0.0.1:7003/'
 curl 'http://127.0.0.1:7004/'
 curl 'http://127.0.0.1:7005/'
 curl 'http://127.0.0.1:7006/'
+curl 'http://127.0.0.1:7008/'
 
 test `tail -c 1 $CSV` && printf "\n" >> $CSV
 
@@ -63,6 +64,17 @@ echo "------- egg3 hello -------"
 echo ""
 print_head "egg3" "egg3 hello"
 wrk 'http://127.0.0.1:7005/' \
+  -d 10 \
+  -c 50 \
+  -t 8 \
+  -s $REPORT
+
+sleep 3
+echo ""
+echo "------- egg3 hello with reusePort=true -------"
+echo ""
+print_head "egg3" "egg3 hello with reusePort=true"
+wrk 'http://127.0.0.1:7008/' \
   -d 10 \
   -c 50 \
   -t 8 \
