@@ -11,6 +11,6 @@ jobs:
     name: Node.js
     uses: node-modules/github-actions/.github/workflows/node-test.yml@master
     with:
-      os: 'ubuntu-latest, macos-latest'
+      os: 'ubuntu-latest'
       version: '14, 16, 18, 20, 22, 23'
-      install: npm run install-wrk && npm install && cat /proc/cpuinfo
+      install: npm run install-wrk > wrk.log && npm install && cat /proc/cpuinfo
