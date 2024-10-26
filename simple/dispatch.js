@@ -2,6 +2,7 @@ const egg3 = require('egg3');
 const egg2 = require('egg2');
 const egg1 = require('egg1');
 const cluster = require('cluster');
+const os = require('os');
 
 let workers = Number(process.argv[2] || require('os').cpus().length);
 if (workers > 4) {
@@ -9,6 +10,7 @@ if (workers > 4) {
 }
 
 if (cluster.isMaster) {
+  console.log('os version: %s', os.version());
   console.log('egg-cluster version: %s', require('egg-cluster/package.json').version);
 
   egg1.startCluster({
