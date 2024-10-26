@@ -23,7 +23,7 @@
     "node": ">=14.20.0"
   },
   "scripts": {
-    "install-wrk": "install-wrk.sh",
+    "install-wrk": "pwd && ls -l . && install-wrk.sh",
     "test-simple": "simple/run.sh",
     "test-simple-view": "simple_view/run.sh",
     "test-simple-passport": "simple_passport/run.sh",
