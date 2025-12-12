@@ -14,7 +14,6 @@ curl 'http://127.0.0.1:7003/'
 curl 'http://127.0.0.1:7004/'
 curl 'http://127.0.0.1:7005/'
 curl 'http://127.0.0.1:7006/'
-curl 'http://127.0.0.1:7007/'
 curl 'http://127.0.0.1:7008/'
 curl 'http://127.0.0.1:7009/'
 
@@ -58,18 +57,6 @@ echo "------- egg3 hello with worker_threads=1 -------"
 echo ""
 print_head "egg3" "egg3 hello with worker_threads=1"
 wrk 'http://127.0.0.1:7006/' \
-  -d 30 \
-  -c 50 \
-  -t 8 \
-  --latency \
-  -s $REPORT
-
-sleep 5
-echo ""
-echo "------- egg3 hello with worker_threads -------"
-echo ""
-print_head "egg3" "egg3 hello with worker_threads"
-wrk 'http://127.0.0.1:7007/' \
   -d 30 \
   -c 50 \
   -t 8 \
