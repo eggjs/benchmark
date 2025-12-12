@@ -50,6 +50,14 @@ if (cluster.isMaster) {
     framework: 'egg3',
   });
 
+  egg3.startCluster({
+    startMode: 'worker_threads',
+    workers,
+    ports: [ 7007 ],
+    baseDir: __dirname,
+    framework: 'egg3',
+  });
+
   for (let i = 0; i < workers; i++) {
     cluster.fork();
   }
