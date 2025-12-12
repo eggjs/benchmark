@@ -35,6 +35,7 @@ wrk 'http://127.0.0.1:7005/' \
   -d 10 \
   -c 50 \
   -t 8 \
+  --latency \
   -s $REPORT
 
 sleep 3
@@ -46,6 +47,7 @@ wrk 'http://127.0.0.1:7008/' \
   -d 10 \
   -c 50 \
   -t 8 \
+  --latency \
   -s $REPORT
 
 sleep 3
@@ -57,6 +59,7 @@ wrk 'http://127.0.0.1:7006/' \
   -d 10 \
   -c 50 \
   -t 8 \
+  --latency \
   -s $REPORT
 
 echo ""
@@ -67,6 +70,7 @@ wrk 'http://127.0.0.1:7002/' \
   -d 10 \
   -c 50 \
   -t 8 \
+  --latency \
   -s $REPORT
 
 sleep 3
@@ -78,6 +82,7 @@ wrk 'http://127.0.0.1:7003/' \
   -d 10 \
   -c 50 \
   -t 8 \
+  --latency \
   -s $REPORT
 
 sleep 3
@@ -89,6 +94,7 @@ wrk 'http://127.0.0.1:7004/' \
   -d 10 \
   -c 50 \
   -t 8 \
+  --latency \
   -s $REPORT
 
 kill $pid
