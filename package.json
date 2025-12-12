@@ -4,7 +4,7 @@
   "description": "egg benchmark",
   "private": true,
   "dependencies": {
-    "egg-cluster": "2.4.0-beta.0",
+    "egg-cluster": "2.5.0-beta.0",
     "egg-passport": "^2.0.0",
     "egg-view-ejs": "^2.0.0",
     "egg-view-nunjucks": "^2.1.4",
