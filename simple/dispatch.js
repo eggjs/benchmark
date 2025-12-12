@@ -58,6 +58,15 @@ if (cluster.isMaster) {
     framework: 'egg3',
   });
 
+  require('egg-cluster').startCluster({
+    startMode: 'worker_threads',
+    workers,
+    ports: [ 7009 ],
+    baseDir: __dirname,
+    framework: 'egg3',
+    reusePort: true,
+  });
+
   for (let i = 0; i < workers; i++) {
     cluster.fork();
   }

@@ -16,6 +16,7 @@ curl 'http://127.0.0.1:7005/'
 curl 'http://127.0.0.1:7006/'
 curl 'http://127.0.0.1:7007/'
 curl 'http://127.0.0.1:7008/'
+curl 'http://127.0.0.1:7009/'
 
 test `tail -c 1 $CSV` && printf "\n" >> $CSV
 
@@ -75,6 +76,19 @@ wrk 'http://127.0.0.1:7007/' \
   --latency \
   -s $REPORT
 
+sleep 3
+echo ""
+echo "------- egg3 hello with worker_threads and reusePort=true -------"
+echo ""
+print_head "egg3" "egg3 hello with worker_threads and reusePort=true"
+wrk 'http://127.0.0.1:7009/' \
+  -d 10 \
+  -c 50 \
+  -t 8 \
+  --latency \
+  -s $REPORT
+
+sleep 3
 echo ""
 echo "------- koa hello -------"
 echo ""
