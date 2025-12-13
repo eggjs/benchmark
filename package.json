@@ -7,9 +7,9 @@
     "egg-passport": "^2.0.0",
     "egg-view-ejs": "^2.0.0",
     "egg-view-nunjucks": "^2.1.4",
-    "egg1": "^1.11.0",
-    "egg2": "^2.37.0",
-    "egg3": "^3.3.3",
+    "egg1": "npm:egg@1",
+    "egg2": "npm:egg@2",
+    "egg3": "npm:egg@3",
     "koa": "^2.13.4",
     "koa-router": "^12.0.0",
     "nunjucks": "^3.0.1"
@@ -22,11 +22,12 @@
     "node": ">=14.20.0"
   },
   "scripts": {
-    "test-simple": "simple/run.sh",
+    "install-wrk": "pwd && ls -l . && sh install-wrk.sh",
+    "test-simple": "NODE_DEBUG=egg-cluster:app_worker simple/run.sh",
     "test-simple-view": "simple_view/run.sh",
     "test-simple-passport": "simple_passport/run.sh",
     "test": "cat stats-header.csv > stats.csv && npm run test-simple && npm run test-simple-view && npm run test-simple-passport && cp stats.csv plot/all.csv",
-    "ci": "EGG_SERVER_ENV=prod npm test"
+    "ci": "PATH=$PWD/wrk/bin:$PATH EGG_SERVER_ENV=prod npm test"
   },
   "repository": {
     "type": "git",
