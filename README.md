@@ -13,7 +13,7 @@ egg benchmark
 * egg default enable 15 middlewares (6 security middlewares enable by default)
 * enable router
 * passport has 17 middlewares (15 default, 2 passport middlewares)
-* csrf are disabled, because in most situation we won't caculate csrf token and set to cookie
+* csrf are disabled, because in most situation we won't calculate csrf token and set to cookie
 
 ## Scenes
 
@@ -29,6 +29,7 @@ egg benchmark
 * egg2: `wrk http://127.0.0.1:7004/ -d 10 -c 50 -t 8`
 * egg3: `wrk http://127.0.0.1:7005/ -d 10 -c 50 -t 8`
 * egg3 with worker_threads: `wrk http://127.0.0.1:7006/ -d 10 -c 50 -t 8`
+* egg3 with reusePort: `wrk http://127.0.0.1:7008/ -d 10 -c 50 -t 8`
 
 ## Server
 
