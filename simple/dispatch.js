@@ -4,7 +4,7 @@ const egg1 = require('egg1');
 const cluster = require('cluster');
 const os = require('os');
 
-let workers = Number(process.argv[2] || require('os').cpus().length);
+let workers = Number(process.argv[2] || os.cpus().length);
 if (workers > 4) {
   workers = 4;
 }
