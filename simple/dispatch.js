@@ -34,13 +34,13 @@ if (cluster.isMaster) {
     framework: 'egg3',
   });
 
-  require('egg-cluster').startCluster(({
+  egg3.startCluster({
     workers,
     baseDir: __dirname,
     port: 7008,
     framework: 'egg3',
     reusePort: true,
-  }));
+  });
 
   egg3.startCluster({
     startMode: 'worker_threads',
@@ -50,7 +50,7 @@ if (cluster.isMaster) {
     framework: 'egg3',
   });
 
-  require('egg-cluster').startCluster({
+  egg3.startCluster({
     startMode: 'worker_threads',
     workers,
     port: 7009,
