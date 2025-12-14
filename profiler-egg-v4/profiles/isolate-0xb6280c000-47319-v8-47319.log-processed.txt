@@ -1,0 +1,1792 @@
+Statistical profiling result from isolate-0xb6280c000-47319-v8-47319.log, (9031 ticks, 4182 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+    621    6.9%    6.9%  JS: *promiseInitHook node:internal/async_hooks:328:25
+    529    5.9%    5.9%  Builtin: KeyedLoadIC_Megamorphic
+    190    2.1%    2.1%  Builtin: GetProperty
+    188    2.1%    2.1%  Builtin: KeyedStoreIC_Megamorphic
+    137    1.5%    1.5%  Builtin: RunMicrotasks
+    110    1.2%    1.2%  Builtin: AsyncFunctionEnter
+     91    1.0%    1.0%  Builtin: CallFunction_ReceiverIsNullOrUndefined
+     90    1.0%    1.0%  JS: *promiseBeforeHook node:internal/async_hooks:346:27
+     88    1.0%    1.0%  Builtin: FulfillPromise
+     85    0.9%    0.9%  Builtin: AsyncFunctionAwaitUncaught
+     83    0.9%    0.9%  Builtin: FindOrderedHashMapEntry
+     70    0.8%    0.8%  JS: *promiseAfterHook node:internal/async_hooks:353:26
+     67    0.7%    0.7%  Builtin: ResolvePromise
+     62    0.7%    0.7%  Builtin: Call_ReceiverIsNullOrUndefined
+     61    0.7%    0.7%  Builtin: PromiseAll
+     58    0.6%    0.6%  Builtin: LoadIC
+     54    0.6%    0.6%  Builtin: LoadIC_Megamorphic
+     51    0.6%    0.6%  Builtin: ObjectPrototypeHasOwnProperty
+     49    0.5%    0.5%  Builtin: ResumeGeneratorTrampoline
+     43    0.5%    0.5%  JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+     43    0.5%    0.5%  JS: *OrdinaryGetMetadata /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/reflect-metadata/Reflect.js:591:37
+     41    0.5%    0.5%  Builtin: ArrayIteratorPrototypeNext
+     39    0.4%    0.4%  Builtin: RecordWriteSaveFP
+     39    0.4%    0.4%  Builtin: PromisePrototypeThen
+     34    0.4%    0.4%  JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+     32    0.4%    0.4%  Builtin: RegExpPrototypeTestFast
+     31    0.3%    0.3%  JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+     31    0.3%    0.3%  Builtin: StringAdd_CheckNone
+     30    0.3%    0.3%  Builtin: PromiseAllResolveElementClosure
+     28    0.3%    0.3%  Builtin: NewPromiseCapability
+     25    0.3%    0.3%  RegExp: [^\t\x20-\x7e\x80-\xff]
+     25    0.3%    0.3%  JS: *objectPostCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:38:27
+     25    0.3%    0.3%  JS: *getOrCreateEggObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggContainerFactory.js:28:38
+     25    0.3%    0.3%  Builtin: StringToLowerCaseIntl
+     25    0.3%    0.3%  Builtin: CloneObjectIC
+     23    0.3%    0.3%  Builtin: MapPrototypeSet
+     22    0.2%    0.2%  JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:150:31
+     22    0.2%    0.2%  Builtin: GrowFastSmiOrObjectElements
+     22    0.2%    0.2%  Builtin: AsyncFunctionAwaitResolveClosure
+     20    0.2%    0.2%  JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:168:24
+     20    0.2%    0.2%  Builtin: WeakMapGet
+     20    0.2%    0.2%  Builtin: CallApiCallbackOptimizedNoProfiling
+     19    0.2%    0.2%  JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     19    0.2%    0.2%  JS: *_storeHeader node:_http_outgoing:455:22
+     19    0.2%    0.2%  Builtin: StoreIC_Megamorphic
+     19    0.2%    0.2%  Builtin: PerformPromiseThen
+     19    0.2%    0.2%  Builtin: MapConstructor
+     19    0.2%    0.2%  Builtin: JSBuiltinsConstructStub
+     18    0.2%    0.2%  JS: *session file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/session/node_modules/koa-session/dist/esm/index.js:184:34
+     18    0.2%    0.2%  JS: *objectPreCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:32:26
+     18    0.2%    0.2%  Builtin: PromiseCapabilityDefaultResolve
+     17    0.2%    0.2%  JS: *xssProtection file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/xssProtection.js:3:40
+     17    0.2%    0.2%  JS: *emitInitScript node:internal/async_hooks:503:24
+     17    0.2%    0.2%  Builtin: Call_ReceiverIsAny
+     17    0.2%    0.2%  Builtin: CEntry_Return1_ArgvOnStack_NoBuiltinExit
+     17    0.2%    0.2%  Builtin: AsyncFunctionAwaitCaught
+     16    0.2%    0.2%  RegExp: ^[\^_`a-zA-Z\-0-9!#$%&'*+.|~]+$
+     16    0.2%    0.2%  JS: *preCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/EggContextCompatibleHook.js:20:20
+     16    0.2%    0.2%  JS: *nosniff file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/nosniff.js:14:34
+     16    0.2%    0.2%  JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+     16    0.2%    0.2%  Builtin: PromiseResolve
+     15    0.2%    0.2%  JS: *parserOnIncoming node:_http_server:1073:26
+     15    0.2%    0.2%  JS: *objectPreDestroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:44:27
+     15    0.2%    0.2%  JS: *bodyParser /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/node_modules/koa-bodyparser/index.js:63:35
+     15    0.2%    0.2%  Builtin: EnqueueMicrotask
+     14    0.2%    0.2%  JS: *postCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/aop-runtime/dist/EggObjectAopHook.js:32:21
+     14    0.2%    0.2%  JS: *dispatch file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/core/node_modules/@eggjs/router/dist/Router.js:122:26
+     14    0.2%    0.2%  JS: *Readable.removeListener node:internal/streams/readable:1159:45
+     14    0.2%    0.2%  Builtin: PromiseFulfillReactionJob
+     14    0.2%    0.2%  Builtin: CallFunction_ReceiverIsNotNullOrUndefined
+     13    0.1%    0.1%  Builtin: WeakMapLookupHashIndex
+     13    0.1%    0.1%  Builtin: KeyedLoadIC_PolymorphicName
+     12    0.1%    0.1%  JS: *noopen file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/noopen.js:4:33
+     12    0.1%    0.1%  JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:147:18
+     12    0.1%    0.1%  JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:17:30
+     12    0.1%    0.1%  JS: *attachFinishedListener /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/on-finished/index.js:91:33
+     12    0.1%    0.1%  Builtin: JSConstructStubGeneric
+     12    0.1%    0.1%  Builtin: CreateShallowObjectLiteral
+     12    0.1%    0.1%  Builtin: CompileLazy
+     12    0.1%    0.1%  Builtin: CallFunction_ReceiverIsAny
+     12    0.1%    0.1%  Builtin: CallBoundFunction
+     11    0.1%    0.1%  JS: *parserOnHeadersComplete node:_http_common:74:33
+     11    0.1%    0.1%  Builtin: Call_ReceiverIsNotNullOrUndefined
+     10    0.1%    0.1%  JS: *get node:internal/bootstrap/node:100:8
+     10    0.1%    0.1%  JS: *BaseContextClass file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/core/dist/base_context_class.js:14:16
+     10    0.1%    0.1%  Builtin: RegExpReplace
+     10    0.1%    0.1%  Builtin: ObjectGetPrototypeOf
+      9    0.1%    0.1%  JS: *set file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/response.js:376:8
+      9    0.1%    0.1%  JS: *nextTick node:internal/process/task_queues:113:18
+      9    0.1%    0.1%  JS: *get file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/request.js:472:8
+      9    0.1%    0.1%  JS: *end node:_http_outgoing:1085:45
+      9    0.1%    0.1%  JS: *doWrite node:internal/streams/writable:587:17
+      9    0.1%    0.1%  JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/static/node_modules/koa-compose/index.js:35:23
+      9    0.1%    0.1%  JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+      9    0.1%    0.1%  JS: *Readable.on node:internal/streams/readable:1127:33
+      9    0.1%    0.1%  JS: *ContextHandler.getContextCallback file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/EggContextHandler.js:17:45
+      9    0.1%    0.1%  Builtin: SetOrSetIteratorToList
+      9    0.1%    0.1%  Builtin: MapPrototypeDelete
+      9    0.1%    0.1%  Builtin: MapIteratorPrototypeNext
+      9    0.1%    0.1%  Builtin: KeyedLoadIC
+      9    0.1%    0.1%  Builtin: ForInFilter
+      9    0.1%    0.1%  Builtin: BaselineOutOfLinePrologue
+      9    0.1%    0.1%  Builtin: AsyncFunctionResolve
+      8    0.1%    0.1%  JS: *onParserExecute node:_http_server:874:25
+      8    0.1%    0.1%  JS: *first /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/ee-first/index.js:24:15
+      8    0.1%    0.1%  JS: *endReadable node:internal/streams/readable:1682:21
+      8    0.1%    0.1%  JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      8    0.1%    0.1%  JS: *addListener node:events:610:58
+      8    0.1%    0.1%  JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa-static-cache/dist/index.js:82:12
+      8    0.1%    0.1%  Builtin: ToString
+      8    0.1%    0.1%  Builtin: LoadICTrampoline_Megamorphic
+      8    0.1%    0.1%  Builtin: LoadICTrampoline
+      8    0.1%    0.1%  Builtin: FastNewObject
+      7    0.1%    0.1%  RegExp: ^\s*?<
+      7    0.1%    0.1%  JS: *teggRootProto file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/controller-plugin/dist/app/middleware/tegg_root_proto.js:3:40
+      7    0.1%    0.1%  JS: *setStreamTimeout node:internal/stream_base_commons:236:26
+      7    0.1%    0.1%  JS: *set body file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/context.js:312:13
+      7    0.1%    0.1%  JS: *onwrite node:internal/streams/writable:615:17
+      7    0.1%    0.1%  JS: *emit node:events:466:44
+      7    0.1%    0.1%  JS: *_write node:internal/streams/writable:453:16
+      7    0.1%    0.1%  JS: *Readable.read node:internal/streams/readable:647:35
+      7    0.1%    0.1%  JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:152:45
+      7    0.1%    0.1%  Builtin: LoadGlobalIC
+      7    0.1%    0.1%  Builtin: ArrayFrom
+      6    0.1%    0.1%  JS: *runInAsyncScope node:async_hooks:207:18
+      6    0.1%    0.1%  JS: *removeListener node:events:681:28
+      6    0.1%    0.1%  JS: *postCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/EggContextCompatibleHook.js:36:21
+      6    0.1%    0.1%  JS: *meta file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/dist/app/middleware/meta.js:6:31
+      6    0.1%    0.1%  JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/ContextInitiator.js:13:15
+      6    0.1%    0.1%  JS: *clearBuffer node:internal/streams/writable:744:21
+      6    0.1%    0.1%  JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:40:60
+      6    0.1%    0.1%  Builtin: CreateObjectWithoutProperties
+      6    0.1%    0.1%  Builtin: ArrayPrototypeValues
+      5    0.1%    0.1%  JS: ^parseSource node:internal/deps/cjs-module-lexer/lexer:85:22
+      5    0.1%    0.1%  JS: *xframe file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/xframe.js:3:33
+      5    0.1%    0.1%  JS: *writeOrBuffer node:internal/streams/writable:548:23
+      5    0.1%    0.1%  JS: *socketListenerWrap node:_http_server:1236:37
+      5    0.1%    0.1%  JS: *siteFile file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/dist/app/middleware/site_file.js:6:35
+      5    0.1%    0.1%  JS: *rangeMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/static/dist/app/middleware/static.js:10:29
+      5    0.1%    0.1%  JS: *notfound file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/dist/app/middleware/notfound.js:2:35
+      5    0.1%    0.1%  JS: *get path file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/context.js:208:13
+      5    0.1%    0.1%  JS: *get node:_http_incoming:109:16
+      5    0.1%    0.1%  JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:174:30
+      5    0.1%    0.1%  JS: *_destroy node:_http_incoming:218:55
+      5    0.1%    0.1%  JS: *AsyncResource node:async_hooks:168:14
+      5    0.1%    0.1%  JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:35:51
+      5    0.1%    0.1%  Builtin: StringPrototypeSplit
+      5    0.1%    0.1%  Builtin: StrictEqual_Baseline
+      5    0.1%    0.1%  Builtin: SetPrototypeAdd
+      5    0.1%    0.1%  Builtin: NewRestArgumentsElements
+      5    0.1%    0.1%  Builtin: LoadICBaseline
+      5    0.1%    0.1%  Builtin: CEntry_Return1_ArgvOnStack_BuiltinExit
+      5    0.1%    0.1%  Builtin: ArrayIncludesSmiOrObject
+      4    0.0%    0.0%  JS: *write_ node:_http_outgoing:943:16
+      4    0.0%    0.0%  JS: *unenroll node:timers:76:18
+      4    0.0%    0.0%  JS: *set status file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/response.js:57:15
+      4    0.0%    0.0%  JS: *resOnFinish node:_http_server:1007:21
+      4    0.0%    0.0%  JS: *preCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/aop-plugin/dist/lib/AopContextHook.js:35:20
+      4    0.0%    0.0%  JS: *overrideMethod file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/node_modules/koa-override/dist/esm/index.js:7:35
+      4    0.0%    0.0%  JS: *onError node:_http_incoming:439:17
+      4    0.0%    0.0%  JS: *notAllow file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/methodnoallow.js:12:29
+      4    0.0%    0.0%  JS: *emitReadable_ node:internal/streams/readable:830:23
+      4    0.0%    0.0%  JS: *arrayClone node:events:892:20
+      4    0.0%    0.0%  JS: *_send node:_http_outgoing:399:49
+      4    0.0%    0.0%  JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:31:36
+      4    0.0%    0.0%  JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/core/node_modules/@eggjs/router/dist/Router.js:138:27
+      4    0.0%    0.0%  JS: *<anonymous> /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/static/node_modules/koa-compose/index.js:31:19
+      4    0.0%    0.0%  Builtin: WeakMapConstructor
+      4    0.0%    0.0%  Builtin: RegExpPrototypeExecSlow
+      4    0.0%    0.0%  Builtin: JSEntryTrampoline
+      4    0.0%    0.0%  Builtin: CopyDataProperties
+      4    0.0%    0.0%  Builtin: ConstructFunction
+      4    0.0%    0.0%  Builtin: Call_ReceiverIsNotNullOrUndefined_Baseline_Compact
+      4    0.0%    0.0%  Builtin: CallWithSpread
+      4    0.0%    0.0%  Builtin: ArrayPrototypeSlice
+      3    0.0%    0.0%  JS: *preDestroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/background-task/dist/BackgroundTaskHelper.js:24:25
+      3    0.0%    0.0%  JS: *parseBody /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/node_modules/koa-bodyparser/index.js:81:27
+      3    0.0%    0.0%  JS: *onFinish node:_http_outgoing:1080:18
+      3    0.0%    0.0%  JS: *onFinish /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/on-finished/index.js:96:21
+      3    0.0%    0.0%  JS: *logger node:internal/util/debuglog:120:18
+      3    0.0%    0.0%  JS: *isSafePath file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/utils.js:34:27
+      3    0.0%    0.0%  JS: *initAsyncResource node:internal/timers:164:27
+      3    0.0%    0.0%  JS: *has file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/response.js:363:8
+      3    0.0%    0.0%  JS: *getOrCreateEggObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:51:31
+      3    0.0%    0.0%  JS: *getMetaData file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/core-decorator/dist/util/MetadataUtil.js:14:23
+      3    0.0%    0.0%  JS: *getContainer file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggContainerFactory.js:16:24
+      3    0.0%    0.0%  JS: *get node:internal/streams/writable:1010:8
+      3    0.0%    0.0%  JS: *endReadableNT node:internal/streams/readable:1692:23
+      3    0.0%    0.0%  JS: *destroyObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:33:31
+      3    0.0%    0.0%  JS: *containPrototype file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/AppLoadUnit.js:50:21
+      3    0.0%    0.0%  JS: *callPreCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:50:31
+      3    0.0%    0.0%  JS: *callPostCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:56:32
+      3    0.0%    0.0%  JS: *ReadableState node:internal/streams/readable:262:23
+      3    0.0%    0.0%  JS: *OrdinaryGetOwnMetadata /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/reflect-metadata/Reflect.js:602:40
+      3    0.0%    0.0%  JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:47:45
+      3    0.0%    0.0%  Builtin: WeakMapPrototypeSet
+      3    0.0%    0.0%  Builtin: WeakCollectionSet
+      3    0.0%    0.0%  Builtin: StringEqual
+      3    0.0%    0.0%  Builtin: StoreIC
+      3    0.0%    0.0%  Builtin: RegExpPrototypeTest
+      3    0.0%    0.0%  Builtin: RegExpPrototypeExec
+      3    0.0%    0.0%  Builtin: PromiseResolveThenableJob
+      3    0.0%    0.0%  Builtin: NumberToString
+      3    0.0%    0.0%  Builtin: LessThan_Baseline
+      3    0.0%    0.0%  Builtin: KeyedStoreIC
+      3    0.0%    0.0%  Builtin: KeyedLoadICTrampoline_Megamorphic
+      3    0.0%    0.0%  Builtin: KeyedLoadICBaseline
+      3    0.0%    0.0%  Builtin: JSRunMicrotasksEntry
+      3    0.0%    0.0%  Builtin: DefineNamedOwnIC
+      3    0.0%    0.0%  Builtin: CallWithArrayLike
+      3    0.0%    0.0%  Builtin: AdaptorWithBuiltinExitFrame
+      2    0.0%    0.0%  RegExp: ;$
+      2    0.0%    0.0%  JS: ^objectPostCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:38:27
+      2    0.0%    0.0%  JS: ^init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      2    0.0%    0.0%  JS: ^byteLength node:buffer:771:20
+      2    0.0%    0.0%  JS: ^addJobsToDependencyGraph node:internal/modules/esm/module_job:208:38
+      2    0.0%    0.0%  JS: *writeHead node:_http_server:351:19
+      2    0.0%    0.0%  JS: *wrappedController file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/core/node_modules/@eggjs/router/dist/EggRouter.js:236:31
+      2    0.0%    0.0%  JS: *set node:_http_outgoing:251:16
+      2    0.0%    0.0%  JS: *parserOnMessageComplete node:_http_common:140:33
+      2    0.0%    0.0%  JS: *noop node:internal/util/debuglog:57:14
+      2    0.0%    0.0%  JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:139:15
+      2    0.0%    0.0%  JS: *getPathFromURLPosix node:internal/url:1564:29
+      2    0.0%    0.0%  JS: *getLifecycleList file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:11:21
+      2    0.0%    0.0%  JS: *getContextProto file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/ContextObjectGraph.js:19:27
+      2    0.0%    0.0%  JS: *getContext file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/ContextHandler.js:5:22
+      2    0.0%    0.0%  JS: *get node:internal/streams/duplex:161:8
+      2    0.0%    0.0%  JS: *get node:internal/bootstrap/node:475:8
+      2    0.0%    0.0%  JS: *fileURLToPath node:internal/url:1605:23
+      2    0.0%    0.0%  JS: *emitCloseNT node:internal/streams/destroy:133:21
+      2    0.0%    0.0%  JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/core/node_modules/koa-compose/index.js:35:23
+      2    0.0%    0.0%  JS: *afterWriteTick node:internal/streams/writable:693:24
+      2    0.0%    0.0%  JS: *addCatch node:events:366:18
+      2    0.0%    0.0%  JS: *_flush node:_http_outgoing:1193:51
+      2    0.0%    0.0%  JS: *Readable.push node:internal/streams/readable:387:35
+      2    0.0%    0.0%  JS: *BaseContextClass file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/dist/lib/core/base_context_class.js:8:8
+      2    0.0%    0.0%  JS: *AbstractEggContext file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:10:8
+      2    0.0%    0.0%  JS: *<anonymous> node:internal/validators:460:42
+      2    0.0%    0.0%  JS: *<anonymous> /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:31:19
+      2    0.0%    0.0%  Builtin: ToBooleanForBaselineJump
+      2    0.0%    0.0%  Builtin: StringSubstring
+      2    0.0%    0.0%  Builtin: StringPrototypeReplace
+      2    0.0%    0.0%  Builtin: StringPrototypeCharCodeAt
+      2    0.0%    0.0%  Builtin: StringIndexOf
+      2    0.0%    0.0%  Builtin: StringConstructor
+      2    0.0%    0.0%  Builtin: ResumeGeneratorBaseline
+      2    0.0%    0.0%  Builtin: RegExpPrototypeMatch
+      2    0.0%    0.0%  Builtin: JSEntry
+      2    0.0%    0.0%  Builtin: InterpreterEntryTrampoline
+      2    0.0%    0.0%  Builtin: ForInEnumerate
+      2    0.0%    0.0%  Builtin: FastNewClosure
+      2    0.0%    0.0%  Builtin: CreateEmptyArrayLiteral
+      2    0.0%    0.0%  Builtin: Call_ReceiverIsNullOrUndefined_Baseline_Compact
+      2    0.0%    0.0%  Builtin: CallApiGetter
+      2    0.0%    0.0%  Builtin: BaselineLeaveFrame
+      2    0.0%    0.0%  Builtin: ArrayPrototypeShift
+      1    0.0%    0.0%  RegExp: \s*}[^}]*$
+      1    0.0%    0.0%  RegExp: %2F|%5C
+      1    0.0%    0.0%  JS: ~Settings /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/fast-glob/out/settings.js:20:16
+      1    0.0%    0.0%  JS: ~<anonymous> /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg/node_modules/undici/lib/llhttp/constants.js:1:1
+      1    0.0%    0.0%  JS: ^toPathIfFileURL node:internal/url:1676:25
+      1    0.0%    0.0%  JS: ^resume_ node:internal/streams/readable:1254:17
+      1    0.0%    0.0%  JS: ^readFileSync node:fs:434:22
+      1    0.0%    0.0%  JS: ^processPromiseRejections node:internal/process/promises:439:34
+      1    0.0%    0.0%  JS: ^preCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/EggContextCompatibleHook.js:20:20
+      1    0.0%    0.0%  JS: ^postCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/aop-runtime/dist/EggObjectAopHook.js:32:21
+      1    0.0%    0.0%  JS: ^parserOnIncoming node:_http_server:1073:26
+      1    0.0%    0.0%  JS: ^once node:events:652:44
+      1    0.0%    0.0%  JS: ^onFinished /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/on-finished/index.js:46:21
+      1    0.0%    0.0%  JS: ^onFinish node:_http_outgoing:1080:18
+      1    0.0%    0.0%  JS: ^onFinish /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/on-finished/index.js:96:21
+      1    0.0%    0.0%  JS: ^normalize node:path:1308:12
+      1    0.0%    0.0%  JS: ^matchKnownFields node:_http_incoming:276:26
+      1    0.0%    0.0%  JS: ^logger node:internal/util/debuglog:120:18
+      1    0.0%    0.0%  JS: ^loadAndTranslate node:internal/modules/esm/loader:593:19
+      1    0.0%    0.0%  JS: ^listOnTimeout node:internal/timers:528:25
+      1    0.0%    0.0%  JS: ^internalStartTimer node:internal/util/debuglog:404:30
+      1    0.0%    0.0%  JS: ^init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/AppLoadUnitInstance.js:33:15
+      1    0.0%    0.0%  JS: ^importResolve file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/utils/dist/import.js:238:30
+      1    0.0%    0.0%  JS: ^howMuchToRead node:internal/streams/readable:630:23
+      1    0.0%    0.0%  JS: ^handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:168:24
+      1    0.0%    0.0%  JS: ^getOwnMetadata /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/reflect-metadata/Reflect.js:407:32
+      1    0.0%    0.0%  JS: ^get file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/session/node_modules/koa-session/dist/esm/index.js:260:16
+      1    0.0%    0.0%  JS: ^get file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/core/dist/loader/context_loader.js:58:16
+      1    0.0%    0.0%  JS: ^get config file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/core/dist/egg.js:243:15
+      1    0.0%    0.0%  JS: ^ensureTimerFlagsAreUpdated node:internal/util/debuglog:393:38
+      1    0.0%    0.0%  JS: ^emitInitNative node:internal/async_hooks:192:24
+      1    0.0%    0.0%  JS: ^dispatch file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/core/node_modules/@eggjs/router/dist/Router.js:122:26
+      1    0.0%    0.0%  JS: ^dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+      1    0.0%    0.0%  JS: ^ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      1    0.0%    0.0%  JS: ^captures file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/core/node_modules/@eggjs/router/dist/Layer.js:102:13
+      1    0.0%    0.0%  JS: ^callPostCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:56:32
+      1    0.0%    0.0%  JS: ^allocate node:buffer:432:18
+      1    0.0%    0.0%  JS: ^URL node:internal/url:811:14
+      1    0.0%    0.0%  JS: ^SafeMap node:internal/per_context/primordials:406:3
+      1    0.0%    0.0%  JS: ^Readable.removeAllListeners node:internal/streams/readable:1181:49
+      1    0.0%    0.0%  JS: ^EggContextImpl file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/EggContextImpl.js:7:16
+      1    0.0%    0.0%  JS: ^AbstractEggContext file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:10:33
+      1    0.0%    0.0%  JS: ^<anonymous> node:internal/per_context/primordials:491:15
+      1    0.0%    0.0%  JS: ^<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa-static-cache/dist/index.js:82:12
+      1    0.0%    0.0%  JS: *slowCases node:internal/util:237:19
+      1    0.0%    0.0%  JS: *resolve node:path:1260:10
+      1    0.0%    0.0%  JS: *processPromiseRejections node:internal/process/promises:439:34
+      1    0.0%    0.0%  JS: *onevent /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/ee-first/index.js:81:26
+      1    0.0%    0.0%  JS: *normalizeString node:path:93:25
+      1    0.0%    0.0%  JS: *matchKnownFields node:_http_incoming:276:26
+      1    0.0%    0.0%  JS: *index /Users/fengmk2/git/github.com/eggjs/benchmark/simple/app/controller/async.js:3:16
+      1    0.0%    0.0%  JS: *hasObserver node:internal/perf/observe:570:21
+      1    0.0%    0.0%  JS: *getOrStore file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-common-util/dist/MapUtil.js:2:22
+      1    0.0%    0.0%  JS: *getMetaData file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/metadata/dist/impl/EggPrototypeImpl.js:49:16
+      1    0.0%    0.0%  JS: *getLoadUnitById file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/metadata/dist/factory/LoadUnitFactory.js:52:27
+      1    0.0%    0.0%  JS: *get node:_http_outgoing:248:16
+      1    0.0%    0.0%  JS: *get file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectUtil.js:5:16
+      1    0.0%    0.0%  JS: *dta file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/dta.js:4:24
+      1    0.0%    0.0%  JS: *compose /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/core/node_modules/koa-compose/index.js:19:18
+      1    0.0%    0.0%  JS: *clearIncoming node:_http_server:994:23
+      1    0.0%    0.0%  JS: *callbackTrampoline node:internal/async_hooks:118:28
+      1    0.0%    0.0%  JS: *callPreDestroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:62:32
+      1    0.0%    0.0%  JS: *append node:internal/linkedlist:30:16
+      1    0.0%    0.0%  JS: *_unrefTimer node:net:520:52
+      1    0.0%    0.0%  JS: *Writable.write node:internal/streams/writable:504:36
+      1    0.0%    0.0%  JS: *OutgoingMessage node:_http_outgoing:106:25
+      1    0.0%    0.0%  JS: *ContextInitiator file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/ContextInitiator.js:8:16
+      1    0.0%    0.0%  JS: *BackgroundTaskHelper file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/background-task/dist/BackgroundTaskHelper.js:14:28
+      1    0.0%    0.0%  JS: *<anonymous> node:internal/per_context/primordials:517:15
+      1    0.0%    0.0%  JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:174:25
+      1    0.0%    0.0%  Builtin: SubString
+      1    0.0%    0.0%  Builtin: StringPrototypeEndsWith
+      1    0.0%    0.0%  Builtin: StringAddConvertRight
+      1    0.0%    0.0%  Builtin: StrictEqual
+      1    0.0%    0.0%  Builtin: StoreInArrayLiteralIC
+      1    0.0%    0.0%  Builtin: StoreICBaseline
+      1    0.0%    0.0%  Builtin: SetConstructor
+      1    0.0%    0.0%  Builtin: SameValue
+      1    0.0%    0.0%  Builtin: RunMicrotasksTrampoline
+      1    0.0%    0.0%  Builtin: OrdinaryToPrimitive_Number_Inline
+      1    0.0%    0.0%  Builtin: NumberIsFinite
+      1    0.0%    0.0%  Builtin: MapPrototypeGet
+      1    0.0%    0.0%  Builtin: LoadIC_NoFeedback
+      1    0.0%    0.0%  Builtin: Increment_Baseline
+      1    0.0%    0.0%  Builtin: GreaterThan_Baseline
+      1    0.0%    0.0%  Builtin: FunctionPrototypeCall
+      1    0.0%    0.0%  Builtin: FindOrderedHashSetEntry
+      1    0.0%    0.0%  Builtin: FindNonDefaultConstructorOrConstruct
+      1    0.0%    0.0%  Builtin: DeleteProperty
+      1    0.0%    0.0%  Builtin: Construct_Baseline
+      1    0.0%    0.0%  Builtin: CloneFastJSArray
+      1    0.0%    0.0%  Builtin: CallFunctionTemplate_Generic
+      1    0.0%    0.0%  Builtin: CallForwardVarargs
+      1    0.0%    0.0%  Builtin: BitwiseAnd_Baseline
+      1    0.0%    0.0%  Builtin: ArraySome
+      1    0.0%    0.0%  Builtin: ArraySingleArgumentConstructor_HoleySmi_DontOverride
+      1    0.0%    0.0%  Builtin: ArrayShift
+      1    0.0%    0.0%  Builtin: ArrayReduce
+      1    0.0%    0.0%  Builtin: ArrayPrototypePush
+      1    0.0%    0.0%  Builtin: ArrayPrototypeConcat
+
+ [C++]:
+   ticks  total  nonlib   name
+
+ [Summary]:
+   ticks  total  nonlib   name
+   4849   53.7%   53.7%  JavaScript
+      0    0.0%    0.0%  C++
+    500    5.5%    5.5%  GC
+      0    0.0%          Shared libraries
+   4182   46.3%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   4182   46.3%  UNKNOWN
+    548   13.1%    JS: *doWrite node:internal/streams/writable:587:17
+    546   99.6%      JS: *clearBuffer node:internal/streams/writable:744:21
+    546  100.0%        JS: *end node:_http_outgoing:1085:45
+    546  100.0%          JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:168:24
+    546  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+    316    7.6%    JS: *clearBuffer node:internal/streams/writable:744:21
+    303   95.9%      JS: *end node:_http_outgoing:1085:45
+    303  100.0%        JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:168:24
+    303  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+    303  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+     13    4.1%      JS: *Writable.uncork node:internal/streams/writable:520:37
+     13  100.0%        JS: ^end node:_http_outgoing:1085:45
+     10   76.9%          JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:168:24
+     10  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      3   23.1%          JS: ^_respond file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:218:13
+      3  100.0%            JS: ^handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:168:24
+    201    4.8%    JS: ^wrapSafe node:internal/modules/cjs/loader:1596:18
+    200   99.5%      JS: ^<anonymous> node:internal/modules/cjs/loader:1656:37
+    200  100.0%        JS: ^<anonymous> node:internal/modules/cjs/loader:1804:37
+    200  100.0%          JS: ^<anonymous> node:internal/modules/cjs/loader:1432:33
+    200  100.0%            JS: ^<anonymous> node:internal/modules/cjs/loader:1169:24
+    175    4.2%    JS: *nextTick node:internal/process/task_queues:113:18
+     78   44.6%      JS: *resOnFinish node:_http_server:1007:21
+     78  100.0%        JS: *onFinish node:_http_outgoing:1080:18
+     78  100.0%          JS: *afterWriteTick node:internal/streams/writable:693:24
+     78  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     50   28.6%      JS: *Readable.push node:internal/streams/readable:387:35
+     50  100.0%        JS: *parserOnMessageComplete node:_http_common:140:33
+     39   22.3%      JS: *onError node:_http_incoming:439:17
+     39  100.0%        JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      3    1.7%      JS: ^_destroy node:_http_incoming:218:55
+      3  100.0%        JS: *endReadableNT node:internal/streams/readable:1692:23
+      3  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+    154    3.7%    JS: ^compileSourceTextModule node:internal/modules/esm/utils:344:33
+    153   99.4%      JS: ^moduleStrategy node:internal/modules/esm/translators:101:50
+    153  100.0%        JS: ^#translate node:internal/modules/esm/loader:538:13
+    153  100.0%          JS: ^afterLoad node:internal/modules/esm/loader:595:23
+    153  100.0%            JS: ^loadAndTranslate node:internal/modules/esm/loader:593:19
+    115    2.7%    JS: *endReadable node:internal/streams/readable:1682:21
+    113   98.3%      JS: *Readable.read node:internal/streams/readable:647:35
+    113  100.0%        JS: *resume_ node:internal/streams/readable:1254:17
+    113  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      2    1.7%      JS: ^Readable.read node:internal/streams/readable:647:35
+      2  100.0%        JS: *flow node:internal/streams/readable:1280:14
+      2  100.0%          JS: ^resume_ node:internal/streams/readable:1254:17
+      2  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     94    2.2%    JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:40:60
+     94  100.0%      Builtin: AsyncFunctionAwaitResolveClosure
+     94  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+     94  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     81    1.9%    JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+     79   97.5%      JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+     19   24.1%        JS: ~lazyUndici node:http:122:20
+     19  100.0%          JS: ~get node:http:177:6
+     19  100.0%            Builtin: ReflectGet
+      4    5.1%        JS: ~lib/web/fetch/response.js node:internal/deps/undici/undici:9234:30
+      4  100.0%          JS: ^__require node:internal/deps/undici/undici:5:49
+      4  100.0%            JS: ~lib/web/fetch/index.js node:internal/deps/undici/undici:10396:27
+      4    5.1%        JS: ~<anonymous> node:http2:1:1
+      4  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      4  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      3    3.8%        JS: ~<anonymous> node:internal/streams/duplex:1:1
+      3  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      3  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      3    3.8%        JS: ~<anonymous> node:internal/main/run_main_module:1:1
+      3    3.8%        JS: ~<anonymous> node:internal/child_process:1:1
+      3  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      3  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      3    3.8%        JS: ~<anonymous> node:http:1:1
+      3  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      3  100.0%            JS: ~builtinStrategy node:internal/modules/esm/translators:406:52
+      3    3.8%        JS: ~<anonymous> node:crypto:1:1
+      3  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      3  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      2    2.5%        JS: ~<anonymous> node:tls:1:1
+      2  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      2  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      2    2.5%        JS: ~<anonymous> node:internal/streams/operators:1:1
+      2  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      2  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      2    2.5%        JS: ~<anonymous> node:internal/fs/promises:1:1
+      2  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      2  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      2    2.5%        JS: ^requireWithFallbackInDeps node:internal/bootstrap/realm:436:35
+      1   50.0%          JS: ~lib/web/fetch/webidl.js node:internal/deps/undici/undici:3716:28
+      1  100.0%            JS: ^__require node:internal/deps/undici/undici:5:49
+      1   50.0%          JS: ~lib/web/fetch/util.js node:internal/deps/undici/undici:4135:26
+      1  100.0%            JS: ^__require node:internal/deps/undici/undici:5:49
+      1    1.3%        JS: ~setupChannel node:internal/child_process:582:22
+      1  100.0%          JS: ~_forkChild node:child_process:177:20
+      1  100.0%            JS: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.3%        JS: ~load node:internal/modules/esm/loader:805:7
+      1  100.0%          JS: ~loadAndTranslate node:internal/modules/esm/loader:593:19
+      1  100.0%            JS: ~#createModuleJob node:internal/modules/esm/loader:616:19
+      1    1.3%        JS: ~lib/dispatcher/client.js node:internal/deps/undici/undici:7664:29
+      1  100.0%          JS: ~__require node:internal/deps/undici/undici:5:49
+      1  100.0%            JS: ~lib/dispatcher/pool.js node:internal/deps/undici/undici:8173:27
+      1    1.3%        JS: ~initCJSParseSync node:internal/modules/esm/translators:79:26
+      1  100.0%          JS: ~commonjsStrategy node:internal/modules/esm/translators:299:54
+      1  100.0%            JS: ~#translate node:internal/modules/esm/loader:538:13
+      1    1.3%        JS: ~getTranslators node:internal/modules/esm/loader:96:24
+      1  100.0%          JS: ~ModuleLoader node:internal/modules/esm/loader:147:20
+      1  100.0%            JS: ~ModuleLoader node:internal/modules/esm/loader:187:14
+      1    1.3%        JS: ~<anonymous> node:stream:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      1    1.3%        JS: ~<anonymous> node:stream/web:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      1  100.0%            JS: ^compileForPublicLoader node:internal/bootstrap/realm:332:25
+      1    1.3%        JS: ~<anonymous> node:perf_hooks:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      1    1.3%        JS: ~<anonymous> node:net:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      1    1.3%        JS: ~<anonymous> node:internal/worker:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      1    1.3%        JS: ~<anonymous> node:internal/webstreams/readablestream:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      1    1.3%        JS: ~<anonymous> node:internal/webstreams/compression:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      1    1.3%        JS: ~<anonymous> node:internal/util/parse_args/parse_args:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      1    1.3%        JS: ~<anonymous> node:internal/tls/secure-context:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      1    1.3%        JS: ~<anonymous> node:internal/streams/readable:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      1    1.3%        JS: ~<anonymous> node:internal/modules/esm/resolve:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      1    1.3%        JS: ~<anonymous> node:internal/http2/core:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      1    1.3%        JS: ~<anonymous> node:internal/http2/compat:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      1    1.3%        JS: ~<anonymous> node:internal/fs/streams:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      1    1.3%        JS: ~<anonymous> node:internal/crypto/hkdf:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      1    1.3%        JS: ~<anonymous> node:internal/assert/assertion_error:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      1    1.3%        JS: ~<anonymous> node:child_process:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      1    1.3%        JS: ~<anonymous> node:assert:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      1    1.3%        JS: ~<anonymous> node:_tls_wrap:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      1    1.3%        JS: ~<anonymous> node:_http_common:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      1    1.3%        JS: ~<anonymous> node:_http_client:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:385:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:422:24
+      1    1.3%        JS: ~#createModuleJob node:internal/modules/esm/loader:616:19
+      1  100.0%          JS: ~#getJobFromResolveResult node:internal/modules/esm/loader:337:27
+      1  100.0%            JS: ~getModuleJobForImport node:internal/modules/esm/loader:309:30
+      1    1.3%        JS: ~#cachedDefaultResolve node:internal/modules/esm/loader:723:24
+      1  100.0%          JS: ~resolve node:internal/modules/esm/loader:699:10
+      1  100.0%            JS: ~getModuleJobForImport node:internal/modules/esm/loader:309:30
+      1    1.3%        Builtin: ReflectGet
+      1  100.0%          Builtin: CallApiCallbackGeneric
+      1  100.0%            JS: ~builtinStrategy node:internal/modules/esm/translators:406:52
+      2    2.5%      JS: ^compileForPublicLoader node:internal/bootstrap/realm:332:25
+      2  100.0%        JS: ^loadBuiltinModule node:internal/modules/helpers:113:27
+      2  100.0%          JS: ^builtinStrategy node:internal/modules/esm/translators:406:52
+      2  100.0%            JS: ^#translate node:internal/modules/esm/loader:538:13
+     73    1.7%    JS: *onwrite node:internal/streams/writable:615:17
+     46   63.0%      JS: *doWrite node:internal/streams/writable:587:17
+     46  100.0%        JS: *clearBuffer node:internal/streams/writable:744:21
+     46  100.0%          JS: *end node:_http_outgoing:1085:45
+     46  100.0%            JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:168:24
+     26   35.6%      JS: *clearBuffer node:internal/streams/writable:744:21
+     26  100.0%        JS: *end node:_http_outgoing:1085:45
+     26  100.0%          JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:168:24
+     26  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      1    1.4%      JS: ^afterWriteDispatched node:internal/stream_base_commons:154:30
+      1  100.0%        JS: ^writevGeneric node:internal/stream_base_commons:121:23
+      1  100.0%          JS: ^Socket._writeGeneric node:net:935:42
+      1  100.0%            JS: ^Socket._writev node:net:972:36
+     64    1.5%    Builtin: ObjectGetPrototypeOf
+     61   95.3%      JS: *OrdinaryGetMetadata /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/reflect-metadata/Reflect.js:591:37
+     25   41.0%        JS: *OrdinaryGetMetadata /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/reflect-metadata/Reflect.js:591:37
+      7   28.0%          JS: *OrdinaryGetMetadata /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/reflect-metadata/Reflect.js:591:37
+      4   57.1%            JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:147:18
+      2   28.6%            JS: *getMetaData file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/core-decorator/dist/util/MetadataUtil.js:14:23
+      1   14.3%            JS: *getMetaData file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/metadata/dist/impl/EggPrototypeImpl.js:49:16
+      6   24.0%          JS: *getMetaData file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/metadata/dist/impl/EggPrototypeImpl.js:49:16
+      6  100.0%            JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      6   24.0%          JS: *getMetaData file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/core-decorator/dist/util/MetadataUtil.js:14:23
+      6  100.0%            JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      6   24.0%          JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:147:18
+      6  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+     16   26.2%        JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:147:18
+     16  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+     16  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+     15   24.6%        JS: *getMetaData file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/core-decorator/dist/util/MetadataUtil.js:14:23
+     15  100.0%          JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+     15  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      5    8.2%        JS: *getMetaData file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/metadata/dist/impl/EggPrototypeImpl.js:49:16
+      5  100.0%          JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      5  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      3    4.7%      JS: *parserOnHeadersComplete node:_http_common:74:33
+
+    621    6.9%  JS: *promiseInitHook node:internal/async_hooks:328:25
+     65   10.5%    Builtin: PromisePrototypeThen
+     56   86.2%      Builtin: PromiseAll
+     17   30.4%        JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+     17  100.0%          JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+     17  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+     13   23.2%        JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      8   61.5%          JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      8  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      5   38.5%          Builtin: AsyncFunctionAwaitResolveClosure
+      5  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+     10   17.9%        JS: *objectPostCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:38:27
+      5   50.0%          JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      5  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      3   30.0%          JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      3  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      2   20.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+     10   17.9%        JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+     10  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+     10  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      3    5.4%        JS: *objectPreDestroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:44:27
+      3  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      3  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      3    5.4%        JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:147:18
+      3  100.0%          JS: *destroyObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:33:31
+      3  100.0%            JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      5    7.7%      JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      5  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      5  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      5  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      4    6.2%      Builtin: CallApiCallbackOptimizedNoProfiling
+      4  100.0%        JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     47    7.6%    Builtin: PromiseAll
+     15   31.9%      JS: *objectPreCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:32:26
+      8   53.3%        Builtin: AsyncFunctionAwaitResolveClosure
+      8  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      8  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      7   46.7%        JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      7  100.0%          JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:174:30
+      7  100.0%            JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:17:30
+     12   25.5%      JS: *objectPostCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:38:27
+      6   50.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      6  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      6  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      3   25.0%        JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      3  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      3  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      3   25.0%        JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      3  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      3  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      5   10.6%      JS: *objectPreDestroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:44:27
+      5  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      5  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      5  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      5   10.6%      JS: *getOrCreateEggObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggContainerFactory.js:28:38
+      5  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      5  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      5  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      5   10.6%      JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      3   60.0%        JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      3  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      3  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      2   40.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      2    4.3%      JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      2  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      2    4.3%      JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      2  100.0%        JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      2  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      2  100.0%            JS: *teggRootProto file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/controller-plugin/dist/app/middleware/tegg_root_proto.js:3:40
+      1    2.1%      JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:147:18
+      1  100.0%        JS: *destroyObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:33:31
+      1  100.0%          JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      1  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+     45    7.2%    JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+     33   73.3%      Builtin: AsyncFunctionAwaitResolveClosure
+     33  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+     33  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     12   26.7%      JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:174:30
+     12  100.0%        JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:17:30
+     12  100.0%          JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+     12  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+     45    7.2%    JS: *getOrCreateEggObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggContainerFactory.js:28:38
+     26   57.8%      Builtin: AsyncFunctionAwaitResolveClosure
+     26  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+     26  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     19   42.2%      JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+     19  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+     19  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+     19  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     42    6.8%    JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+     21   50.0%      JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+     21  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+     21  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+     21  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     20   47.6%      Builtin: AsyncFunctionAwaitResolveClosure
+     20  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+     20  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      1    2.4%      JS: ^ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      1  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      1  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     35    5.6%    JS: *objectPostCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:38:27
+     13   37.1%      JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+     13  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+     13  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+     13  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     12   34.3%      JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+     12  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+     12  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+     12  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     10   28.6%      Builtin: AsyncFunctionAwaitResolveClosure
+     10  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+     10  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     32    5.2%    JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+     19   59.4%      Builtin: AsyncFunctionAwaitResolveClosure
+     19  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+     19  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     13   40.6%      JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+     13  100.0%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+     13  100.0%          JS: *teggRootProto file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/controller-plugin/dist/app/middleware/tegg_root_proto.js:3:40
+     13  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+     23    3.7%    JS: *session file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/session/node_modules/koa-session/dist/esm/index.js:184:34
+     12   52.2%      Builtin: AsyncFunctionAwaitResolveClosure
+     12  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+     12  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     11   47.8%      JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+     10   90.9%        JS: *overrideMethod file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/node_modules/koa-override/dist/esm/index.js:7:35
+     10  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+     10  100.0%            JS: *bodyParser /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/node_modules/koa-bodyparser/index.js:63:35
+      1    9.1%        JS: ^overrideMethod file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/node_modules/koa-override/dist/esm/index.js:7:35
+      1  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      1  100.0%            JS: *bodyParser /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/node_modules/koa-bodyparser/index.js:63:35
+     21    3.4%    JS: *objectPreCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:32:26
+     15   71.4%      JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+     15  100.0%        JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:174:30
+     15  100.0%          JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:17:30
+     15  100.0%            JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      6   28.6%      Builtin: AsyncFunctionAwaitResolveClosure
+      6  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      6  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     21    3.4%    JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:174:30
+     21  100.0%      JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:17:30
+     21  100.0%        JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+     21  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+     21  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+     17    2.7%    JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:147:18
+     17  100.0%      JS: *destroyObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:33:31
+     17  100.0%        JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+     17  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+     17  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+     17    2.7%    JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:35:51
+     17  100.0%      JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+     17  100.0%        JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+     17  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+     17  100.0%            JS: *teggRootProto file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/controller-plugin/dist/app/middleware/tegg_root_proto.js:3:40
+     15    2.4%    JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:150:31
+     15  100.0%      JS: *parserOnIncoming node:_http_server:1073:26
+     15  100.0%        JS: *parserOnHeadersComplete node:_http_common:74:33
+     13    2.1%    JS: *xframe file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/xframe.js:3:33
+     13  100.0%      JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+     13  100.0%        JS: *xssProtection file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/xssProtection.js:3:40
+     13  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+     13  100.0%            JS: *nosniff file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/nosniff.js:14:34
+     13    2.1%    JS: *noopen file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/noopen.js:4:33
+     13  100.0%      JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+     13  100.0%        JS: *notAllow file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/methodnoallow.js:12:29
+     13  100.0%          JS: *<anonymous> /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:31:19
+     13  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+     13    2.1%    JS: *destroyObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:33:31
+     13  100.0%      JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+     13  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+     13  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+     13  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     12    1.9%    JS: *xssProtection file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/xssProtection.js:3:40
+     12  100.0%      JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+     12  100.0%        JS: *nosniff file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/nosniff.js:14:34
+     12  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+     12  100.0%            JS: *noopen file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/noopen.js:4:33
+     12    1.9%    JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:168:24
+     12  100.0%      JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:150:31
+     12  100.0%        JS: *parserOnIncoming node:_http_server:1073:26
+     12  100.0%          JS: *parserOnHeadersComplete node:_http_common:74:33
+     12    1.9%    JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:17:30
+     12  100.0%      JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+     12  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+     12  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+     12  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     11    1.8%    JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:47:45
+     11  100.0%      JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+     11  100.0%        JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+     11  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+     11  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+     10    1.6%    JS: *bodyParser /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/node_modules/koa-bodyparser/index.js:63:35
+      8   80.0%      JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      8  100.0%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/static/node_modules/koa-compose/index.js:35:23
+      5   62.5%          JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa-static-cache/dist/index.js:82:12
+      5  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/static/node_modules/koa-compose/index.js:35:23
+      3   37.5%          JS: ^<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa-static-cache/dist/index.js:82:12
+      3  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/static/node_modules/koa-compose/index.js:35:23
+      2   20.0%      Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      9    1.4%    JS: *preDestroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/background-task/dist/BackgroundTaskHelper.js:24:25
+      9  100.0%      JS: *objectPreDestroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:44:27
+      9  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      9  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      9  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      9    1.4%    JS: *parseBody /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/node_modules/koa-bodyparser/index.js:81:27
+      9  100.0%      JS: *bodyParser /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/node_modules/koa-bodyparser/index.js:63:35
+      9  100.0%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      9  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/static/node_modules/koa-compose/index.js:35:23
+      9  100.0%            JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa-static-cache/dist/index.js:82:12
+      9    1.4%    JS: *notfound file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/dist/app/middleware/notfound.js:2:35
+      9  100.0%      JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      9  100.0%        JS: *siteFile file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/dist/app/middleware/site_file.js:6:35
+      9  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      9  100.0%            JS: *meta file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/dist/app/middleware/meta.js:6:31
+      9    1.4%    JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      7   77.8%      JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      7  100.0%        JS: *teggRootProto file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/controller-plugin/dist/app/middleware/tegg_root_proto.js:3:40
+      7  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      7  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+      2   22.2%      Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      7    1.1%    JS: *preCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/EggContextCompatibleHook.js:20:20
+      7  100.0%      JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:35:51
+      7  100.0%        JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      7  100.0%          JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      7  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      7    1.1%    JS: *objectPreDestroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:44:27
+      7  100.0%      Builtin: AsyncFunctionAwaitResolveClosure
+      7  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      7  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      7    1.1%    JS: *nosniff file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/nosniff.js:14:34
+      7  100.0%      JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+      7  100.0%        JS: *noopen file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/noopen.js:4:33
+      7  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+      7  100.0%            JS: *notAllow file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/methodnoallow.js:12:29
+
+    529    5.9%  Builtin: KeyedLoadIC_Megamorphic
+    109   20.6%    JS: *promiseInitHook node:internal/async_hooks:328:25
+     12   11.0%      JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+     11   91.7%        JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+     11  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+     11  100.0%            JS: *teggRootProto file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/controller-plugin/dist/app/middleware/tegg_root_proto.js:3:40
+      1    8.3%        Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      1  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     10    9.2%      JS: *getOrCreateEggObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggContainerFactory.js:28:38
+      8   80.0%        JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      8  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      8  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      2   20.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      9    8.3%      Builtin: PromiseAll
+      3   33.3%        JS: *objectPreCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:32:26
+      2   66.7%          Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      1   33.3%          JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      1  100.0%            JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:174:30
+      2   22.2%        JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      2  100.0%          JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      2  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      2   22.2%        JS: *getOrCreateEggObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggContainerFactory.js:28:38
+      2  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      1   11.1%        JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      1  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      1   11.1%        JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      1  100.0%          JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      1  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      6    5.5%      JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:147:18
+      6  100.0%        JS: *destroyObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:33:31
+      6  100.0%          JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      6  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      5    4.6%      JS: *objectPostCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:38:27
+      2   40.0%        JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      2  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      2   40.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      1   20.0%        JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      1  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      5    4.6%      JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      3   60.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      3  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      3  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      2   40.0%        JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:174:30
+      2  100.0%          JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:17:30
+      2  100.0%            JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      5    4.6%      JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      3   60.0%        JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      3  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      3  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      2   40.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      5    4.6%      JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      4   80.0%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      4  100.0%          JS: *teggRootProto file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/controller-plugin/dist/app/middleware/tegg_root_proto.js:3:40
+      4  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      1   20.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      1  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      5    4.6%      Builtin: PromisePrototypeThen
+      3   60.0%        Builtin: PromiseAll
+      2   66.7%          JS: *objectPostCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:38:27
+      1   50.0%            JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      1   50.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      1   33.3%          JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      1  100.0%            JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      2   40.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      4    3.7%      JS: *session file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/session/node_modules/koa-session/dist/esm/index.js:184:34
+      3   75.0%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      3  100.0%          JS: *overrideMethod file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/node_modules/koa-override/dist/esm/index.js:7:35
+      3  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      1   25.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      1  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      4    3.7%      JS: *preDestroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/background-task/dist/BackgroundTaskHelper.js:24:25
+      4  100.0%        JS: *objectPreDestroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:44:27
+      4  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      4  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      4    3.7%      JS: *objectPreCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:32:26
+      2   50.0%        JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      2  100.0%          JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:174:30
+      2  100.0%            JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:17:30
+      2   50.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      4    3.7%      JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:47:45
+      4  100.0%        JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      4  100.0%          JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      4  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      3    2.8%      JS: *xssProtection file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/xssProtection.js:3:40
+      3  100.0%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+      3  100.0%          JS: *nosniff file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/nosniff.js:14:34
+      3  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+      2    1.8%      JS: *teggRootProto file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/controller-plugin/dist/app/middleware/tegg_root_proto.js:3:40
+      2  100.0%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      2  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+      2  100.0%            JS: *dta file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/dta.js:4:24
+      2    1.8%      JS: *preCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/EggContextCompatibleHook.js:20:20
+      2  100.0%        JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:35:51
+      2  100.0%          JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      2  100.0%            JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      2    1.8%      JS: *postCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/EggContextCompatibleHook.js:36:21
+      2  100.0%        JS: *objectPostCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:38:27
+      2  100.0%          JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      2  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      2    1.8%      JS: *objectPreDestroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:44:27
+      2  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      2    1.8%      JS: *noopen file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/noopen.js:4:33
+      2  100.0%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+      2  100.0%          JS: *notAllow file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/methodnoallow.js:12:29
+      2  100.0%            JS: *<anonymous> /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:31:19
+      2    1.8%      JS: *destroyObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:33:31
+      2  100.0%        JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      2  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      2    1.8%      JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:174:30
+      2  100.0%        JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:17:30
+      2  100.0%          JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      2  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      2    1.8%      JS: *bodyParser /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/node_modules/koa-bodyparser/index.js:63:35
+      1   50.0%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      1  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/static/node_modules/koa-compose/index.js:35:23
+      1  100.0%            JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa-static-cache/dist/index.js:82:12
+      1   50.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      1  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      2    1.8%      JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:35:51
+      2  100.0%        JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      2  100.0%          JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      2  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+     40    7.6%    Builtin: PromiseAll
+      9   22.5%      JS: *objectPostCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:38:27
+      5   55.6%        JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      5  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      5  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      3   33.3%        Builtin: AsyncFunctionAwaitResolveClosure
+      3  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      3  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      1   11.1%        JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      1  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      7   17.5%      JS: *objectPreCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:32:26
+      5   71.4%        JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      5  100.0%          JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:174:30
+      5  100.0%            JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:17:30
+      2   28.6%        Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      7   17.5%      JS: *getOrCreateEggObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggContainerFactory.js:28:38
+      7  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      7  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      7  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      6   15.0%      JS: *objectPreDestroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:44:27
+      6  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      6  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      6  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      6   15.0%      JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      3   50.0%        JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      3  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      3  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      3   50.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      3  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      3  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      2    5.0%      JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      2  100.0%        JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      2  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      2  100.0%            JS: *teggRootProto file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/controller-plugin/dist/app/middleware/tegg_root_proto.js:3:40
+      2    5.0%      JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:147:18
+      2  100.0%        JS: *destroyObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:33:31
+      2  100.0%          JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      2  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      1    2.5%      JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      1  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      1  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     36    6.8%    JS: *getOrCreateEggObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggContainerFactory.js:28:38
+     24   66.7%      JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+     24  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+     24  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+     24  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     12   33.3%      Builtin: AsyncFunctionAwaitResolveClosure
+     12  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+     12  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     21    4.0%    JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+     17   81.0%      Builtin: AsyncFunctionAwaitResolveClosure
+     17  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+     17  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      4   19.0%      JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:174:30
+      4  100.0%        JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:17:30
+      4  100.0%          JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      4  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+     19    3.6%    Builtin: PromisePrototypeThen
+     17   89.5%      Builtin: PromiseAll
+      6   35.3%        JS: *objectPostCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:38:27
+      4   66.7%          JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      4  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      2   33.3%          Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      3   17.6%        JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      3  100.0%          JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      3  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      3   17.6%        JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:147:18
+      3  100.0%          JS: *destroyObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:33:31
+      3  100.0%            JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      2   11.8%        JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      2  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      2   11.8%        JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      2  100.0%          JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      2  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      1    5.9%        JS: *objectPreDestroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:44:27
+      1  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      2   10.5%      Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%        JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     18    3.4%    JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+     11   61.1%      JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+     11  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+     11  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+     11  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      7   38.9%      Builtin: AsyncFunctionAwaitResolveClosure
+      7  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      7  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     17    3.2%    JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      9   52.9%      JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      9  100.0%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      9  100.0%          JS: *teggRootProto file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/controller-plugin/dist/app/middleware/tegg_root_proto.js:3:40
+      9  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      8   47.1%      Builtin: AsyncFunctionAwaitResolveClosure
+      8  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      8  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     15    2.8%    JS: *objectPostCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:38:27
+      8   53.3%      JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      8  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      8  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      8  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      4   26.7%      JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      4  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      4  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      4  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      3   20.0%      Builtin: AsyncFunctionAwaitResolveClosure
+      3  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      3  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     12    2.3%    JS: *preDestroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/background-task/dist/BackgroundTaskHelper.js:24:25
+     12  100.0%      JS: *objectPreDestroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:44:27
+     12  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+     12  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+     12  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     12    2.3%    JS: *objectPreDestroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:44:27
+     12  100.0%      Builtin: AsyncFunctionAwaitResolveClosure
+     12  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+     12  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     11    2.1%    JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:168:24
+     10   90.9%      JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:150:31
+     10  100.0%        JS: *parserOnIncoming node:_http_server:1073:26
+     10  100.0%          JS: *parserOnHeadersComplete node:_http_common:74:33
+      1    9.1%      Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      1  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     10    1.9%    JS: *socketListenerWrap node:_http_server:1236:37
+      7   70.0%      JS: *parserOnIncoming node:_http_server:1073:26
+      7  100.0%        JS: *parserOnHeadersComplete node:_http_common:74:33
+      3   30.0%      JS: *first /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/ee-first/index.js:24:15
+      3  100.0%        JS: *attachFinishedListener /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/on-finished/index.js:91:33
+      3  100.0%          JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:168:24
+      3  100.0%            JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:150:31
+     10    1.9%    JS: *destroyObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:33:31
+     10  100.0%      JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+     10  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+     10  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+     10  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     10    1.9%    JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:35:51
+     10  100.0%      JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+     10  100.0%        JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+     10  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+     10  100.0%            JS: *teggRootProto file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/controller-plugin/dist/app/middleware/tegg_root_proto.js:3:40
+      9    1.7%    JS: *session file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/session/node_modules/koa-session/dist/esm/index.js:184:34
+      6   66.7%      Builtin: AsyncFunctionAwaitResolveClosure
+      6  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      6  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      3   33.3%      JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      3  100.0%        JS: *overrideMethod file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/node_modules/koa-override/dist/esm/index.js:7:35
+      3  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      3  100.0%            JS: *bodyParser /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/node_modules/koa-bodyparser/index.js:63:35
+      9    1.7%    JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      9    1.7%    JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:147:18
+      9  100.0%      JS: *destroyObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:33:31
+      9  100.0%        JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      9  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      9  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      9    1.7%    JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      6   66.7%      JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      6  100.0%        JS: *teggRootProto file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/controller-plugin/dist/app/middleware/tegg_root_proto.js:3:40
+      6  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      6  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+      3   33.3%      Builtin: AsyncFunctionAwaitResolveClosure
+      3  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      3  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      8    1.5%    JS: *onevent /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/ee-first/index.js:81:26
+      8  100.0%      JS: *onFinish node:_http_outgoing:1080:18
+      8  100.0%        JS: *afterWriteTick node:internal/streams/writable:693:24
+      8  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      8    1.5%    JS: *objectPreCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:32:26
+      4   50.0%      JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      4  100.0%        JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:174:30
+      4  100.0%          JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:17:30
+      4  100.0%            JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      4   50.0%      Builtin: AsyncFunctionAwaitResolveClosure
+      4  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      4  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      7    1.3%    JS: *meta file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/dist/app/middleware/meta.js:6:31
+      7  100.0%      JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      7  100.0%        JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:168:24
+      7  100.0%          JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:150:31
+      7  100.0%            JS: *parserOnIncoming node:_http_server:1073:26
+      7    1.3%    JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:174:30
+      7  100.0%      JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:17:30
+      7  100.0%        JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      7  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      7  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      6    1.1%    JS: *nosniff file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/nosniff.js:14:34
+      4   66.7%      JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+      4  100.0%        JS: *noopen file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/noopen.js:4:33
+      4  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+      4  100.0%            JS: *notAllow file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/methodnoallow.js:12:29
+      2   33.3%      Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      6    1.1%    JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:150:31
+      6  100.0%      JS: *parserOnIncoming node:_http_server:1073:26
+      6  100.0%        JS: *parserOnHeadersComplete node:_http_common:74:33
+
+    190    2.1%  Builtin: GetProperty
+     63   33.2%    Builtin: PromiseAll
+     16   25.4%      JS: *objectPostCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:38:27
+      6   37.5%        JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      6  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      6  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      6   37.5%        Builtin: AsyncFunctionAwaitResolveClosure
+      6  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      6  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      4   25.0%        JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      4  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      4  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+     10   15.9%      JS: *objectPreDestroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:44:27
+     10  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+     10  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+     10  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     10   15.9%      JS: *objectPreCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:32:26
+      8   80.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      8  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      8  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      2   20.0%        JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      2  100.0%          JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:174:30
+      2  100.0%            JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:17:30
+      9   14.3%      JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      9  100.0%        JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      9  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      9  100.0%            JS: *teggRootProto file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/controller-plugin/dist/app/middleware/tegg_root_proto.js:3:40
+      6    9.5%      JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      4   66.7%        JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      4  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      4  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      2   33.3%        Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      5    7.9%      JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      5  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      5  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      5  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      4    6.3%      JS: *getOrCreateEggObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggContainerFactory.js:28:38
+      4  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      4  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      4  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      3    4.8%      JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:147:18
+      3  100.0%        JS: *destroyObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:33:31
+      3  100.0%          JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      3  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+     49   25.8%    Builtin: PromiseCapabilityDefaultResolve
+     30   61.2%      Builtin: PromiseAllResolveElementClosure
+     30  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+     30  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+     19   38.8%      Builtin: PromiseAll
+     10   52.6%        JS: *objectPreCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:32:26
+     10  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+     10  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      5   26.3%        JS: *getOrCreateEggObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggContainerFactory.js:28:38
+      5  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      5  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      4   21.1%        JS: *objectPostCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:38:27
+      4  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      4  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+     36   18.9%    JS: *getOrCreateEggObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggContainerFactory.js:28:38
+     34   94.4%      JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+     34  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+     34  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+     34  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      2    5.6%      Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      6    3.2%    JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:174:30
+      6  100.0%      Builtin: AsyncFunctionAwaitResolveClosure
+      6  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      6  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      5    2.6%    JS: *objectPreCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:32:26
+      5  100.0%      Builtin: AsyncFunctionAwaitResolveClosure
+      5  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      5  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      5    2.6%    Builtin: RegExpPrototypeMatch
+      5  100.0%      Builtin: StringPrototypeMatch
+      5  100.0%        JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/core/node_modules/@eggjs/router/dist/Router.js:138:27
+      5  100.0%          JS: *dispatch file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/core/node_modules/@eggjs/router/dist/Router.js:122:26
+      5  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      4    2.1%    JS: *getOrCreateEggObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:51:31
+      4  100.0%      Builtin: AsyncFunctionAwaitResolveClosure
+      4  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      4  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      4    2.1%    Builtin: RegExpPrototypeExec
+      3   75.0%      Builtin: RegExpPrototypeTest
+      3  100.0%        JS: *dispatch file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/core/node_modules/@eggjs/router/dist/Router.js:122:26
+      3  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      3  100.0%            JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      1   25.0%      Builtin: RegExpPrototypeMatch
+      1  100.0%        Builtin: StringPrototypeMatch
+      1  100.0%          JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/core/node_modules/@eggjs/router/dist/Router.js:138:27
+      1  100.0%            JS: *dispatch file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/core/node_modules/@eggjs/router/dist/Router.js:122:26
+      3    1.6%    JS: *parseBody /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/node_modules/koa-bodyparser/index.js:81:27
+      3  100.0%      JS: *bodyParser /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/node_modules/koa-bodyparser/index.js:63:35
+      3  100.0%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      3  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/static/node_modules/koa-compose/index.js:35:23
+      3  100.0%            JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa-static-cache/dist/index.js:82:12
+      3    1.6%    JS: *objectPostCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:38:27
+      1   33.3%      JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      1  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      1  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      1   33.3%      JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      1  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      1  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      1   33.3%      Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      1  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      3    1.6%    Builtin: StringPrototypeMatch
+      3  100.0%      JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/core/node_modules/@eggjs/router/dist/Router.js:138:27
+      3  100.0%        JS: *dispatch file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/core/node_modules/@eggjs/router/dist/Router.js:122:26
+      3  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      3  100.0%            JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      3    1.6%    Builtin: RegExpPrototypeTest
+      3  100.0%      JS: *dispatch file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/core/node_modules/@eggjs/router/dist/Router.js:122:26
+      3  100.0%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      3  100.0%          JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      3  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      2    1.1%    JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      2  100.0%      JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      2  100.0%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      2  100.0%          JS: *teggRootProto file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/controller-plugin/dist/app/middleware/tegg_root_proto.js:3:40
+      2  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+
+    188    2.1%  Builtin: KeyedStoreIC_Megamorphic
+    125   66.5%    JS: *promiseInitHook node:internal/async_hooks:328:25
+     13   10.4%      Builtin: PromisePrototypeThen
+      8   61.5%        Builtin: PromiseAll
+      4   50.0%          JS: *objectPostCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:38:27
+      3   75.0%            JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      1   25.0%            JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      2   25.0%          JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      2  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      1   12.5%          JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      1  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      1   12.5%          JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:147:18
+      1  100.0%            JS: *destroyObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:33:31
+      3   23.1%        Builtin: CallApiCallbackOptimizedNoProfiling
+      3  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      2   15.4%        JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      2  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+     13   10.4%      Builtin: PromiseAll
+      3   23.1%        JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      2   66.7%          Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      1   33.3%          JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      1  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      2   15.4%        JS: *objectPreDestroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:44:27
+      2  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      2   15.4%        JS: *objectPreCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:32:26
+      1   50.0%          JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      1  100.0%            JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:174:30
+      1   50.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      2   15.4%        JS: *objectPostCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:38:27
+      1   50.0%          JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      1  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      1   50.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      2   15.4%        JS: *getOrCreateEggObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggContainerFactory.js:28:38
+      2  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      1    7.7%        JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      1  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      1    7.7%        JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:147:18
+      1  100.0%          JS: *destroyObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:33:31
+      1  100.0%            JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+     10    8.0%      JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      6   60.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      6  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      6  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      4   40.0%        JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:174:30
+      4  100.0%          JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:17:30
+      4  100.0%            JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+     10    8.0%      JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      7   70.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      7  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      7  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      3   30.0%        JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      3  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      3  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      8    6.4%      JS: *objectPostCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:38:27
+      3   37.5%        JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      3  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      3  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      3   37.5%        JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      3  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      3  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      2   25.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      7    5.6%      JS: *objectPreCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:32:26
+      5   71.4%        Builtin: AsyncFunctionAwaitResolveClosure
+      5  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      5  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      2   28.6%        JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      2  100.0%          JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:174:30
+      2  100.0%            JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:17:30
+      7    5.6%      JS: *getOrCreateEggObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggContainerFactory.js:28:38
+      4   57.1%        Builtin: AsyncFunctionAwaitResolveClosure
+      4  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      4  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      3   42.9%        JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      3  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      3  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      6    4.8%      JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:147:18
+      6  100.0%        JS: *destroyObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:33:31
+      6  100.0%          JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      6  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      6    4.8%      JS: *bodyParser /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/node_modules/koa-bodyparser/index.js:63:35
+      4   66.7%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      4  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/static/node_modules/koa-compose/index.js:35:23
+      3   75.0%            JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa-static-cache/dist/index.js:82:12
+      1   25.0%            JS: ^<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa-static-cache/dist/index.js:82:12
+      2   33.3%        Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      5    4.0%      JS: *session file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/session/node_modules/koa-session/dist/esm/index.js:184:34
+      4   80.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      4  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      4  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      1   20.0%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      1  100.0%          JS: *overrideMethod file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/node_modules/koa-override/dist/esm/index.js:7:35
+      1  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      4    3.2%      JS: *xframe file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/xframe.js:3:33
+      4  100.0%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+      4  100.0%          JS: *xssProtection file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/xssProtection.js:3:40
+      4  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+      4    3.2%      JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      4  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      4  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      4  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      3    2.4%      JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:150:31
+      3  100.0%        JS: *parserOnIncoming node:_http_server:1073:26
+      3  100.0%          JS: *parserOnHeadersComplete node:_http_common:74:33
+      3    2.4%      JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      2   66.7%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      2  100.0%          JS: *teggRootProto file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/controller-plugin/dist/app/middleware/tegg_root_proto.js:3:40
+      2  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      1   33.3%        Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      1  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      3    2.4%      JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:174:30
+      3  100.0%        JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:17:30
+      3  100.0%          JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      3  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      2    1.6%      JS: *preDestroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/background-task/dist/BackgroundTaskHelper.js:24:25
+      2  100.0%        JS: *objectPreDestroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:44:27
+      2  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      2    1.6%      JS: *objectPreDestroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:44:27
+      2  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      2    1.6%      JS: *noopen file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/noopen.js:4:33
+      2  100.0%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+      2  100.0%          JS: *notAllow file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/methodnoallow.js:12:29
+      2  100.0%            JS: *<anonymous> /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:31:19
+      2    1.6%      JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:168:24
+      2  100.0%        JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:150:31
+      2  100.0%          JS: *parserOnIncoming node:_http_server:1073:26
+      2  100.0%            JS: *parserOnHeadersComplete node:_http_common:74:33
+      8    4.3%    JS: *set file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/response.js:376:8
+      6   75.0%      JS: *set body file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/context.js:312:13
+      6  100.0%        JS: *index /Users/fengmk2/git/github.com/eggjs/benchmark/simple/app/controller/async.js:3:16
+      6  100.0%          JS: *wrappedController file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/core/node_modules/@eggjs/router/dist/EggRouter.js:236:31
+      6  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/core/node_modules/koa-compose/index.js:35:23
+      2   25.0%      JS: *meta file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/dist/app/middleware/meta.js:6:31
+      2  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      7    3.7%    JS: *emitInitScript node:internal/async_hooks:503:24
+      4   57.1%      JS: *nextTick node:internal/process/task_queues:113:18
+      2   50.0%        JS: *resOnFinish node:_http_server:1007:21
+      2  100.0%          JS: *onFinish node:_http_outgoing:1080:18
+      2  100.0%            JS: *afterWriteTick node:internal/streams/writable:693:24
+      1   25.0%        JS: ^_destroy node:_http_incoming:218:55
+      1  100.0%          JS: *endReadableNT node:internal/streams/readable:1692:23
+      1  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      1   25.0%        JS: *onError node:_http_incoming:439:17
+      1  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      2   28.6%      JS: *_destroy node:_http_incoming:218:55
+      2  100.0%        JS: *endReadableNT node:internal/streams/readable:1692:23
+      2  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      1   14.3%      JS: *onwrite node:internal/streams/writable:615:17
+      1  100.0%        JS: *doWrite node:internal/streams/writable:587:17
+      1  100.0%          JS: *clearBuffer node:internal/streams/writable:744:21
+      1  100.0%            JS: *end node:_http_outgoing:1085:45
+      7    3.7%    JS: *Readable.on node:internal/streams/readable:1127:33
+      7  100.0%      JS: *socketListenerWrap node:_http_server:1236:37
+      4   57.1%        JS: *parserOnIncoming node:_http_server:1073:26
+      4  100.0%          JS: *parserOnHeadersComplete node:_http_common:74:33
+      3   42.9%        JS: *first /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/ee-first/index.js:24:15
+      3  100.0%          JS: *attachFinishedListener /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/on-finished/index.js:91:33
+      3  100.0%            JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:168:24
+      6    3.2%    JS: *parserOnHeadersComplete node:_http_common:74:33
+      6    3.2%    JS: *addListener node:events:610:58
+      4   66.7%      JS: *attachFinishedListener /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/on-finished/index.js:91:33
+      4  100.0%        JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:168:24
+      4  100.0%          JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:150:31
+      4  100.0%            JS: *parserOnIncoming node:_http_server:1073:26
+      2   33.3%      JS: *parserOnIncoming node:_http_server:1073:26
+      2  100.0%        JS: *parserOnHeadersComplete node:_http_common:74:33
+      6    3.2%    JS: *Readable.removeListener node:internal/streams/readable:1159:45
+      6  100.0%      JS: *onFinish /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/on-finished/index.js:96:21
+      6  100.0%        JS: *onevent /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/ee-first/index.js:81:26
+      6  100.0%          JS: *onFinish node:_http_outgoing:1080:18
+      6  100.0%            JS: *afterWriteTick node:internal/streams/writable:693:24
+      3    1.6%    Builtin: PromiseAll
+      2   66.7%      JS: *objectPreCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:32:26
+      2  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      1   33.3%      JS: *getOrCreateEggObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggContainerFactory.js:28:38
+      1  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      1  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      2    1.1%    JS: *xssProtection file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/xssProtection.js:3:40
+      2  100.0%      Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      2    1.1%    JS: *nosniff file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/nosniff.js:14:34
+      2  100.0%      Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      2    1.1%    JS: *initAsyncResource node:internal/timers:164:27
+      2  100.0%      JS: *setStreamTimeout node:internal/stream_base_commons:236:26
+      2  100.0%        JS: *resOnFinish node:_http_server:1007:21
+      2  100.0%          JS: *onFinish node:_http_outgoing:1080:18
+      2  100.0%            JS: *afterWriteTick node:internal/streams/writable:693:24
+      2    1.1%    JS: *OutgoingMessage node:_http_outgoing:106:25
+      2  100.0%      JS: *parserOnIncoming node:_http_server:1073:26
+      2  100.0%        JS: *parserOnHeadersComplete node:_http_common:74:33
+      2    1.1%    JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:47:45
+      2  100.0%      JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      2  100.0%        JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      2  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      2    1.1%    Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%      Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%        JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+
+    137    1.5%  Builtin: RunMicrotasks
+    135   98.5%    Builtin: CallApiCallbackOptimizedNoProfiling
+    135  100.0%      JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+
+    110    1.2%  Builtin: AsyncFunctionEnter
+     16   14.5%    JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+     10   62.5%      Builtin: AsyncFunctionAwaitResolveClosure
+     10  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+     10  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      6   37.5%      JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:174:30
+      6  100.0%        JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:17:30
+      6  100.0%          JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      6  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+     15   13.6%    JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      4   26.7%      JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+      4  100.0%        JS: *dta file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/dta.js:4:24
+      4  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+      4  100.0%            JS: *xframe file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/xframe.js:3:33
+      3   20.0%      JS: *meta file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/dist/app/middleware/meta.js:6:31
+      3  100.0%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      3  100.0%          JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:168:24
+      3  100.0%            JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:150:31
+      3   20.0%      JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/static/node_modules/koa-compose/index.js:35:23
+      3  100.0%        JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa-static-cache/dist/index.js:82:12
+      3  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/static/node_modules/koa-compose/index.js:35:23
+      3  100.0%            JS: *rangeMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/static/dist/app/middleware/static.js:10:29
+      2   13.3%      JS: *siteFile file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/dist/app/middleware/site_file.js:6:35
+      2  100.0%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      2  100.0%          JS: *meta file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/dist/app/middleware/meta.js:6:31
+      2  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      2   13.3%      JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:168:24
+      2  100.0%        JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:150:31
+      2  100.0%          JS: *parserOnIncoming node:_http_server:1073:26
+      2  100.0%            JS: *parserOnHeadersComplete node:_http_common:74:33
+      1    6.7%      JS: *overrideMethod file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/node_modules/koa-override/dist/esm/index.js:7:35
+      1  100.0%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      1  100.0%          JS: *bodyParser /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/node_modules/koa-bodyparser/index.js:63:35
+      1  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      9    8.2%    Builtin: AsyncFunctionAwaitResolveClosure
+      9  100.0%      Builtin: CallApiCallbackOptimizedNoProfiling
+      9  100.0%        JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      7    6.4%    JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      4   57.1%      Builtin: AsyncFunctionAwaitResolveClosure
+      4  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      4  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      3   42.9%      JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      3  100.0%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      3  100.0%          JS: *teggRootProto file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/controller-plugin/dist/app/middleware/tegg_root_proto.js:3:40
+      3  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      7    6.4%    JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+      3   42.9%      JS: *notAllow file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/methodnoallow.js:12:29
+      3  100.0%        JS: *<anonymous> /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:31:19
+      3  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      3  100.0%            JS: *session file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/session/node_modules/koa-session/dist/esm/index.js:184:34
+      2   28.6%      JS: *nosniff file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/nosniff.js:14:34
+      2  100.0%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+      2  100.0%          JS: *noopen file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/noopen.js:4:33
+      2  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+      1   14.3%      JS: *xssProtection file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/xssProtection.js:3:40
+      1  100.0%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+      1  100.0%          JS: *nosniff file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/nosniff.js:14:34
+      1  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+      1   14.3%      JS: *noopen file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/noopen.js:4:33
+      1  100.0%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+      1  100.0%          JS: *notAllow file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/dist/lib/middlewares/methodnoallow.js:12:29
+      1  100.0%            JS: *<anonymous> /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:31:19
+      7    6.4%    JS: *destroyObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:33:31
+      7  100.0%      JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      7  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      7  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      7  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      7    6.4%    JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      4   57.1%      JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      4  100.0%        JS: *teggRootProto file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/controller-plugin/dist/app/middleware/tegg_root_proto.js:3:40
+      4  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      4  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+      3   42.9%      Builtin: AsyncFunctionAwaitResolveClosure
+      3  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      3  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      5    4.5%    JS: *objectPostCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:38:27
+      3   60.0%      JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      3  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      3  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      3  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      2   40.0%      JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      2  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      5    4.5%    JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      3   60.0%      JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      3  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      3  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      3  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      2   40.0%      Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      5    4.5%    JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:35:51
+      5  100.0%      JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      5  100.0%        JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      5  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      5  100.0%            JS: *teggRootProto file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/controller-plugin/dist/app/middleware/tegg_root_proto.js:3:40
+      4    3.6%    JS: *objectPreDestroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:44:27
+      4  100.0%      Builtin: AsyncFunctionAwaitResolveClosure
+      4  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      4  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      3    2.7%    JS: *getOrCreateEggObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggContainerFactory.js:28:38
+      3  100.0%      JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      3  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      3  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      3  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      2    1.8%    JS: *postCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/aop-runtime/dist/EggObjectAopHook.js:32:21
+      2  100.0%      JS: *objectPostCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:38:27
+      2  100.0%        JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      2  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      2    1.8%    JS: *parserOnIncoming node:_http_server:1073:26
+      2  100.0%      JS: *parserOnHeadersComplete node:_http_common:74:33
+      2    1.8%    JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:168:24
+      2  100.0%      JS: *handleRequest file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/dist/application.js:150:31
+      2  100.0%        JS: *parserOnIncoming node:_http_server:1073:26
+      2  100.0%          JS: *parserOnHeadersComplete node:_http_common:74:33
+      2    1.8%    JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/static/node_modules/koa-compose/index.js:35:23
+      2  100.0%      JS: *rangeMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/static/dist/app/middleware/static.js:10:29
+      2  100.0%        JS: *<anonymous> /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/static/node_modules/koa-compose/index.js:31:19
+      2  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      2  100.0%            JS: *notfound file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/dist/app/middleware/notfound.js:2:35
+      2    1.8%    JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:147:18
+      2  100.0%      JS: *destroyObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:33:31
+      2  100.0%        JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      2  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      2    1.8%    JS: *bodyParser /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/node_modules/koa-bodyparser/index.js:63:35
+      2  100.0%      JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      2  100.0%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/static/node_modules/koa-compose/index.js:35:23
+      2  100.0%          JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa-static-cache/dist/index.js:82:12
+      2  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/static/node_modules/koa-compose/index.js:35:23
+
+     91    1.0%  Builtin: CallFunction_ReceiverIsNullOrUndefined
+     54   59.3%    Builtin: CallApiCallbackOptimizedNoProfiling
+     54  100.0%      JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      4    4.4%    JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      4  100.0%      JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      4  100.0%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      4  100.0%          JS: *teggRootProto file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/controller-plugin/dist/app/middleware/tegg_root_proto.js:3:40
+      4  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      4    4.4%    Builtin: PromiseAll
+      2   50.0%      JS: *getOrCreateEggObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggContainerFactory.js:28:38
+      2  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      2  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      1   25.0%      JS: *objectPostCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:38:27
+      1  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      1  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      1   25.0%      JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:147:18
+      1  100.0%        JS: *destroyObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:33:31
+      1  100.0%          JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      1  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      3    3.3%    JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      2   66.7%      JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:174:30
+      2  100.0%        JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:17:30
+      2  100.0%          JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      2  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      1   33.3%      Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      1  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      2    2.2%    JS: *onFinish node:_http_outgoing:1080:18
+      2  100.0%      JS: *afterWriteTick node:internal/streams/writable:693:24
+      2  100.0%        JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      2    2.2%    JS: *objectPostCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:38:27
+      1   50.0%      JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      1  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      1  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      1   50.0%      JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      1  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      1  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      2    2.2%    JS: *getOrCreateEggObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggContainerFactory.js:28:38
+      1   50.0%      JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      1  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      1  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      1   50.0%      Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      1  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      2    2.2%    JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      1   50.0%      JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      1  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      1  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      1   50.0%      Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      1  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      2    2.2%    JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:147:18
+      2  100.0%      JS: *destroyObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:33:31
+      2  100.0%        JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      2  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      2  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      2    2.2%    JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      1   50.0%      JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      1  100.0%        JS: *teggRootProto file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/controller-plugin/dist/app/middleware/tegg_root_proto.js:3:40
+      1  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      1  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/security/node_modules/koa-compose/index.js:35:23
+      1   50.0%      Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      1  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      1    1.1%    JS: ^getFileProtocolModuleFormat node:internal/modules/esm/get_format:111:37
+      1  100.0%      JS: ^defaultGetFormat node:internal/modules/esm/get_format:240:26
+      1  100.0%        JS: ^defaultLoad node:internal/modules/esm/load:62:21
+      1  100.0%          JS: ^load node:internal/modules/esm/loader:805:7
+      1  100.0%            JS: ^loadAndTranslate node:internal/modules/esm/loader:593:19
+      1    1.1%    JS: *parseBody /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/node_modules/koa-bodyparser/index.js:81:27
+      1  100.0%      JS: *bodyParser /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/egg4/node_modules/koa-bodyparser/index.js:63:35
+      1  100.0%        JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      1  100.0%          JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/static/node_modules/koa-compose/index.js:35:23
+      1  100.0%            JS: ^<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa-static-cache/dist/index.js:82:12
+      1    1.1%    JS: *objectPreDestroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:44:27
+      1  100.0%      Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%        Builtin: CallApiCallbackOptimizedNoProfiling
+      1  100.0%          JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      1    1.1%    JS: *objectPreCreate file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/lifecycle/dist/LifycycleUtil.js:32:26
+      1  100.0%      JS: *initWithInjectProperty file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:20:33
+      1  100.0%        JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:174:30
+      1  100.0%          JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:17:30
+      1  100.0%            JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      1    1.1%    JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      1  100.0%      JS: *ctxLifecycleMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-plugin/dist/lib/ctx_lifecycle_middleware.js:3:45
+      1  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      1  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      1    1.1%    JS: *destroyObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:33:31
+      1  100.0%      JS: *destroy file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:22:18
+      1  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      1  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      1    1.1%    JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/impl/EggObjectImpl.js:174:30
+      1  100.0%      JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:17:30
+      1  100.0%        JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      1  100.0%          Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%            Builtin: CallApiCallbackOptimizedNoProfiling
+      1    1.1%    JS: *createObject file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/factory/EggObjectFactory.js:17:30
+      1  100.0%      JS: *init file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/tegg-runtime/dist/model/AbstractEggContext.js:71:15
+      1  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+      1  100.0%          Builtin: CallApiCallbackOptimizedNoProfiling
+      1  100.0%            JS: *processTicksAndRejections node:internal/process/task_queues:72:35
+      1    1.1%    JS: *<anonymous> file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa-static-cache/dist/index.js:82:12
+      1  100.0%      JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/static/node_modules/koa-compose/index.js:35:23
+      1  100.0%        JS: *rangeMiddleware file:///Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/static/dist/app/middleware/static.js:10:29
+      1  100.0%          JS: *<anonymous> /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/static/node_modules/koa-compose/index.js:31:19
+      1  100.0%            JS: *dispatch /Users/fengmk2/git/github.com/eggjs/benchmark/node_modules/@eggjs/koa/node_modules/koa-compose/index.js:35:23
+      1    1.1%    Builtin: CallApiCallbackGeneric
+

@@ -10,7 +10,8 @@
     "egg1": "npm:egg@1",
     "egg2": "npm:egg@2",
     "egg3": "npm:egg@3",
-    "koa": "^2.13.4",
+    "egg4": "npm:egg@beta",
+    "koa2": "npm:koa@^2.13.4",
     "koa-router": "^12.0.0",
     "nunjucks": "^3.0.1"
   },
@@ -23,7 +24,7 @@
   },
   "scripts": {
     "install-wrk": "pwd && ls -l . && sh install-wrk.sh",
-    "test-simple": "NODE_DEBUG=egg-cluster:app_worker simple/run.sh",
+    "test-simple": "simple/run.sh",
     "test-simple-view": "simple_view/run.sh",
     "test-simple-passport": "simple_passport/run.sh",
     "test": "cat stats-header.csv > stats.csv && npm run test-simple && npm run test-simple-view && npm run test-simple-passport && cp stats.csv plot/all.csv",
