@@ -34,7 +34,7 @@ EGG_SERVER_ENV=prod node $NODE_FLAGS $DIR/dispatch.js egg4 7040 false 2>&1 > $LO
 egg4_pid=$!
 echo "egg4 pid: $egg4_pid"
 
-sleep 5
+sleep 8
 # koa2
 curl 'http://127.0.0.1:7001/'
 # egg3
