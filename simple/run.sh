@@ -30,7 +30,7 @@ egg3_workerThreads_reusePort_pid=$!
 echo "egg3_workerThreads_reusePort pid: $egg3_workerThreads_reusePort_pid"
 
 # egg4
-NODE_ENV=production EGG_SERVER_ENV=prod node --prof $NODE_FLAGS $DIR/dispatch.js egg4 7040 false 2>&1 > $LOG/egg4.log &
+NODE_ENV=production EGG_SERVER_ENV=prod node $NODE_FLAGS $DIR/dispatch.js egg4 7040 false 2>&1 > $LOG/egg4.log &
 egg4_pid=$!
 echo "egg4 pid: $egg4_pid"
 
@@ -54,41 +54,41 @@ function print_head {
   printf "\"$TITLE\"," >> $CSV
 }
 
-sleep 5
-echo ""
-echo "------- egg3 hello -------"
-echo ""
-print_head "egg3" "egg3 hello"
-wrk 'http://127.0.0.1:7030/' \
-  -d 10 \
-  -c 50 \
-  -t 4 \
-  --latency \
-  -s $REPORT
+# sleep 5
+# echo ""
+# echo "------- egg3 hello -------"
+# echo ""
+# print_head "egg3" "egg3 hello"
+# wrk 'http://127.0.0.1:7030/' \
+#   -d 10 \
+#   -c 50 \
+#   -t 4 \
+#   --latency \
+#   -s $REPORT
 
-sleep 5
-echo ""
-echo "------- egg3 hello with reusePort=true -------"
-echo ""
-print_head "egg3" "egg3 hello with reusePort=true"
-wrk 'http://127.0.0.1:7031/' \
-  -d 10 \
-  -c 50 \
-  -t 4 \
-  --latency \
-  -s $REPORT
+# sleep 5
+# echo ""
+# echo "------- egg3 hello with reusePort=true -------"
+# echo ""
+# print_head "egg3" "egg3 hello with reusePort=true"
+# wrk 'http://127.0.0.1:7031/' \
+#   -d 10 \
+#   -c 50 \
+#   -t 4 \
+#   --latency \
+#   -s $REPORT
 
-sleep 5
-echo ""
-echo "------- egg3 hello with worker_threads and reusePort=true -------"
-echo ""
-print_head "egg3" "egg3 hello with worker_threads and reusePort=true"
-wrk 'http://127.0.0.1:7032/' \
-  -d 10 \
-  -c 50 \
-  -t 4 \
-  --latency \
-  -s $REPORT
+# sleep 5
+# echo ""
+# echo "------- egg3 hello with worker_threads and reusePort=true -------"
+# echo ""
+# print_head "egg3" "egg3 hello with worker_threads and reusePort=true"
+# wrk 'http://127.0.0.1:7032/' \
+#   -d 10 \
+#   -c 50 \
+#   -t 4 \
+#   --latency \
+#   -s $REPORT
 
 sleep 5
 echo ""
@@ -114,17 +114,17 @@ wrk 'http://127.0.0.1:7040/' \
 # #   --latency \
 # #   -s $REPORT
 
-sleep 5
-echo ""
-echo "------- koa2 hello -------"
-echo ""
-print_head "koa2" "koa2 hello"
-wrk 'http://127.0.0.1:7001/' \
-  -d 10 \
-  -c 50 \
-  -t 4 \
-  --latency \
-  -s $REPORT
+# sleep 5
+# echo ""
+# echo "------- koa2 hello -------"
+# echo ""
+# print_head "koa2" "koa2 hello"
+# wrk 'http://127.0.0.1:7001/' \
+#   -d 10 \
+#   -c 50 \
+#   -t 4 \
+#   --latency \
+#   -s $REPORT
 
 # sleep 5
 # echo ""
