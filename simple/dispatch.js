@@ -1,82 +1,35 @@
-const egg4 = require('egg4');
-const egg3 = require('egg3');
-const egg2 = require('egg2');
-const egg1 = require('egg1');
-const cluster = require('cluster');
 const os = require('os');
 
-let workers = Number(process.argv[2] || os.cpus().length);
+const startKoa2 = require('./start_koa2');
+
+// node dispatch.js [egg4|egg3|egg2|egg1|koa] [port] [reusePort] [startMode] [workers]
+const framework = process.argv[2] || 'egg4';
+const port = Number(process.argv[3] || 7001);
+let reusePort = process.argv[4] === 'true';
+// process, worker_threads
+const startMode = process.argv[5] || 'process';
+let workers = Number(process.argv[6] || os.availableParallelism());
 if (workers > 4) {
   workers = 4;
 }
 
-if (cluster.isPrimary) {
-  console.log('os version: %s', os.version());
+if (startMode === 'worker_threads') {
+  reusePort = true;
+}
 
-  egg1.startCluster({
-    workers,
-    baseDir: __dirname,
-    port: 7003,
-    framework: 'egg1',
-  });
+console.log('framework: %s, port: %s, reusePort: %s, workers: %s', framework, port, reusePort, workers);
+console.log('os version: %s, availableParallelism: %s', os.version(), os.availableParallelism());
 
-  egg2.startCluster({
-    workers,
-    baseDir: __dirname,
-    port: 7004,
-    framework: 'egg2',
-  });
-
-  egg3.startCluster({
-    workers,
-    baseDir: __dirname,
-    port: 7005,
-    framework: 'egg3',
-  });
-
-  egg3.startCluster({
-    workers,
-    baseDir: __dirname,
-    port: 7008,
-    framework: 'egg3',
-    reusePort: true,
-  });
-
-  egg3.startCluster({
-    startMode: 'worker_threads',
-    workers: 1,
-    ports: [ 7006 ],
-    baseDir: __dirname,
-    framework: 'egg3',
-  });
-
-  egg3.startCluster({
-    startMode: 'worker_threads',
-    workers,
-    port: 7009,
-    baseDir: __dirname,
-    framework: 'egg3',
-    reusePort: true,
-  });
-
-  egg4.startCluster({
-    workers,
-    baseDir: __dirname,
-    port: 7010,
-    framework: 'egg4',
-  });
-
-  egg4.startCluster({
-    workers,
-    baseDir: __dirname,
-    port: 7011,
-    framework: 'egg4',
-    reusePort: true,
-  });
-
-  for (let i = 0; i < workers; i++) {
-    cluster.fork();
-  }
+if (framework === 'koa2') {
+  startKoa2(workers, port);
 } else {
-  require('./koa2');
+  const egg = require(framework);
+  egg.startCluster({
+    startMode,
+    workers,
+    baseDir: __dirname,
+    port,
+    framework,
+    reusePort,
+  });
 }
