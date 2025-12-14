@@ -1,3 +1,4 @@
+const egg4 = require('egg4');
 const egg3 = require('egg3');
 const egg2 = require('egg2');
 const egg1 = require('egg1');
@@ -9,9 +10,8 @@ if (workers > 4) {
   workers = 4;
 }
 
-if (cluster.isMaster) {
+if (cluster.isPrimary) {
   console.log('os version: %s', os.version());
-  console.log('egg-cluster version: %s', require('egg-cluster/package.json').version);
 
   egg1.startCluster({
     workers,
@@ -56,6 +56,21 @@ if (cluster.isMaster) {
     port: 7009,
     baseDir: __dirname,
     framework: 'egg3',
+    reusePort: true,
+  });
+
+  egg4.startCluster({
+    workers,
+    baseDir: __dirname,
+    port: 7010,
+    framework: 'egg4',
+  });
+
+  egg4.startCluster({
+    workers,
+    baseDir: __dirname,
+    port: 7011,
+    framework: 'egg4',
     reusePort: true,
   });
 

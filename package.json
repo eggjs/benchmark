@@ -10,6 +10,7 @@
     "egg1": "npm:egg@1",
     "egg2": "npm:egg@2",
     "egg3": "npm:egg@3",
+    "egg4": "npm:egg@beta",
     "koa": "^2.13.4",
     "koa-router": "^12.0.0",
     "nunjucks": "^3.0.1"
@@ -34,5 +35,6 @@
     "url": "https://github.com/eggjs/benchmark.git"
   },
   "author": "fengmk2 <fengmk2@gmail.com> (https://github.com/fengmk2)",
-  "license": "MIT"
+  "license": "MIT",
+  "packageManager": "npm@11.7.0"
 }
