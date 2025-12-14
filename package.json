@@ -35,6 +35,5 @@
     "url": "https://github.com/eggjs/benchmark.git"
   },
   "author": "fengmk2 <fengmk2@gmail.com> (https://github.com/fengmk2)",
-  "license": "MIT",
-  "packageManager": "npm@11.7.0"
+  "license": "MIT"
 }
