@@ -10,27 +10,27 @@ mkdir -p $LOG
 
 echo
 # koa2
-EGG_SERVER_ENV=prod node $NODE_FLAGS $DIR/dispatch.js koa2 7001 2>&1 > $LOG/koa2.log &
+NODE_ENV=production EGG_SERVER_ENV=prod node $NODE_FLAGS $DIR/dispatch.js koa2 7001 2>&1 > $LOG/koa2.log &
 koa2_pid=$!
 echo "koa2 pid: $koa2_pid"
 
 # egg3
-EGG_SERVER_ENV=prod node $NODE_FLAGS $DIR/dispatch.js egg3 7030 false 2>&1 > $LOG/egg3.log &
+NODE_ENV=production EGG_SERVER_ENV=prod node $NODE_FLAGS $DIR/dispatch.js egg3 7030 false 2>&1 > $LOG/egg3.log &
 egg3_pid=$!
 echo "egg3 pid: $egg3_pid"
 
 # egg3 with reusePort=true
-EGG_SERVER_ENV=prod node $NODE_FLAGS $DIR/dispatch.js egg3 7031 true 2>&1 > $LOG/egg3_reusePort.log &
+NODE_ENV=production EGG_SERVER_ENV=prod node $NODE_FLAGS $DIR/dispatch.js egg3 7031 true 2>&1 > $LOG/egg3_reusePort.log &
 egg3_reusePort_pid=$!
 echo "egg3_reusePort pid: $egg3_reusePort_pid"
 
 # egg3 startMode=worker_threads with reusePort=true
-EGG_SERVER_ENV=prod node $NODE_FLAGS $DIR/dispatch.js egg3 7032 true worker_threads 2>&1 > $LOG/egg3_workerThreads_reusePort.log &
+NODE_ENV=production EGG_SERVER_ENV=prod node $NODE_FLAGS $DIR/dispatch.js egg3 7032 true worker_threads 2>&1 > $LOG/egg3_workerThreads_reusePort.log &
 egg3_workerThreads_reusePort_pid=$!
 echo "egg3_workerThreads_reusePort pid: $egg3_workerThreads_reusePort_pid"
 
 # egg4
-EGG_SERVER_ENV=prod node $NODE_FLAGS $DIR/dispatch.js egg4 7040 false 2>&1 > $LOG/egg4.log &
+NODE_ENV=production EGG_SERVER_ENV=prod node --prof $NODE_FLAGS $DIR/dispatch.js egg4 7040 false 2>&1 > $LOG/egg4.log &
 egg4_pid=$!
 echo "egg4 pid: $egg4_pid"
 
