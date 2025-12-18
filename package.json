@@ -5,7 +5,7 @@
   "private": true,
   "dependencies": {
     "egg-passport": "^2.0.0",
-    "egg-view-ejs": "^2.0.0",
+    "egg-view-ejs": "^3.0.0",
     "egg-view-nunjucks": "^2.1.4",
     "egg1": "npm:egg@1",
     "egg2": "npm:egg@2",
